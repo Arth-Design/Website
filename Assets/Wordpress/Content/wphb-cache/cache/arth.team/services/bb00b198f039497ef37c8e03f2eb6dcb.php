@@ -776,8 +776,8 @@ padding: 10px;}		</style>
 			<rs-module-wrap id="rev_slider_25_1_wrapper" data-source="gallery" style="background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
 				<rs-module id="rev_slider_25_1" style="" data-version="6.2.23">
 					<rs-slides>
-						<rs-slide data-key="rs-105" data-title="Slide" data-thumb="//arth.team/wp-content/uploads/2021/12/SERVICE-BANNER_1-scaled-50x100.jpg" data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;">
-							<img src="//arth.team/wp-content/uploads/2021/12/SERVICE-BANNER_1-scaled.jpg" title="Architect using transparent tablet smart construction technology" width="1199" height="800" class="rev-slidebg" data-no-retina>
+						<rs-slide data-key="rs-105" data-title="Slide" data-thumb="./Assets/Wordpress/Content/uploads/2021/12/SERVICE-BANNER_1-scaled-50x100.jpg" data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;">
+							<img src="./Assets/Wordpress/Content/uploads/2021/12/SERVICE-BANNER_1-scaled.jpg" title="Architect using transparent tablet smart construction technology" width="1199" height="800" class="rev-slidebg" data-no-retina>
 <!--
 							--><rs-layer
 								id="slider-25-slide-105-layer-4" 
@@ -804,8 +804,8 @@ padding: 10px;}		</style>
 							>Take a giant leap towards innovation with our digital solutions 
 							</rs-layer><!--
 -->						</rs-slide>
-						<rs-slide data-key="rs-104" data-title="Slide" data-thumb="//arth.team/wp-content/uploads/2021/12/challenge-idea-game-wooden-one-corporate_1418-521-50x100.jpg" data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;">
-							<img src="//arth.team/wp-content/uploads/2021/12/challenge-idea-game-wooden-one-corporate_1418-521.jpg" title="challenge-idea-game-wooden-one-corporate_1418-521" width="626" height="417" class="rev-slidebg" data-no-retina>
+						<rs-slide data-key="rs-104" data-title="Slide" data-thumb="./Assets/Wordpress/Content/uploads/2021/12/challenge-idea-game-wooden-one-corporate_1418-521-50x100.jpg" data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;">
+							<img src="./Assets/Wordpress/Content/uploads/2021/12/challenge-idea-game-wooden-one-corporate_1418-521.jpg" title="challenge-idea-game-wooden-one-corporate_1418-521" width="626" height="417" class="rev-slidebg" data-no-retina>
 <!--
 							--><rs-layer
 								id="slider-25-slide-104-layer-4" 
@@ -834,8 +834,8 @@ padding: 10px;}		</style>
 							>Take a giant leap towards innovation with our digital solutions 
 							</rs-layer><!--
 -->						</rs-slide>
-						<rs-slide data-key="rs-106" data-title="Slide" data-thumb="//arth.team/wp-content/uploads/2021/12/VDC-2-scaled-50x100.jpg" data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;">
-							<img src="//arth.team/wp-content/uploads/2021/12/VDC-2-scaled.jpg" title="Empty office for architects with computer on desk" width="1386" height="924" class="rev-slidebg" data-no-retina>
+						<rs-slide data-key="rs-106" data-title="Slide" data-thumb="./Assets/Wordpress/Content/uploads/2021/12/VDC-2-scaled-50x100.jpg" data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;">
+							<img src="./Assets/Wordpress/Content/uploads/2021/12/VDC-2-scaled.jpg" title="Empty office for architects with computer on desk" width="1386" height="924" class="rev-slidebg" data-no-retina>
 <!--
 							--><rs-layer
 								id="slider-25-slide-106-layer-4" 

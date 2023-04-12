@@ -258,8 +258,8 @@ border: 1px solid #ddd !important;
 }
 @font-face {
 font-family: 'Glyphicons Halflings';
-src: url(//arth.team/wp-content/plugins/tabs-for-visual-composer/fonts/glyphicons-halflings-regular.eot);
-src: url(//arth.team/wp-content/plugins/tabs-for-visual-composer/fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(//arth.team/wp-content/plugins/tabs-for-visual-composer/fonts/glyphicons-halflings-regular.woff2) format('woff2'), url(//arth.team/wp-content/plugins/tabs-for-visual-composer/fonts/glyphicons-halflings-regular.woff) format('woff'), url(//arth.team/wp-content/plugins/tabs-for-visual-composer/fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(//arth.team/wp-content/plugins/tabs-for-visual-composer/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg');
+src: url(./Assets/Wordpress/Content/plugins/tabs-for-visual-composer/fonts/glyphicons-halflings-regular.eot);
+src: url(./Assets/Wordpress/Content/plugins/tabs-for-visual-composer/fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(./Assets/Wordpress/Content/plugins/tabs-for-visual-composer/fonts/glyphicons-halflings-regular.woff2) format('woff2'), url(./Assets/Wordpress/Content/plugins/tabs-for-visual-composer/fonts/glyphicons-halflings-regular.woff) format('woff'), url(./Assets/Wordpress/Content/plugins/tabs-for-visual-composer/fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(./Assets/Wordpress/Content/plugins/tabs-for-visual-composer/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg');
 }
 .wdo-tabs-container .glyphicon {
 position: relative;

@@ -888,8 +888,8 @@ padding: 10px;}		</style>
 			<rs-module-wrap id="rev_slider_21_1_wrapper" data-source="gallery" style="background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
 				<rs-module id="rev_slider_21_1" style="" data-version="6.2.23">
 					<rs-slides>
-						<rs-slide data-key="rs-61" data-title="Slide" data-thumb="//arth.team/wp-content/uploads/2022/03/contact-1-50x100.jpg" data-anim="ei:d;eo:d;s:d;r:0;t:slideleft;sl:d;">
-							<img src="//arth.team/wp-content/uploads/2022/03/contact-1.jpg" title="contact (1)" width="1600" height="800" class="rev-slidebg" data-no-retina>
+						<rs-slide data-key="rs-61" data-title="Slide" data-thumb="./Assets/Wordpress/Content/uploads/2022/03/contact-1-50x100.jpg" data-anim="ei:d;eo:d;s:d;r:0;t:slideleft;sl:d;">
+							<img src="./Assets/Wordpress/Content/uploads/2022/03/contact-1.jpg" title="contact (1)" width="1600" height="800" class="rev-slidebg" data-no-retina>
 <!--
 							--><rs-layer
 								id="slider-21-slide-61-layer-0" 
@@ -933,8 +933,8 @@ padding: 10px;}		</style>
 							> 
 							</rs-layer><!--
 -->						</rs-slide>
-						<rs-slide data-key="rs-95" data-title="Slide" data-thumb="//arth.team/wp-content/uploads/2022/03/CONTACT-US-2-1-1-50x100.jpg" data-anim="ei:d;eo:d;s:2500ms;r:0;t:slideleft;sl:d;">
-							<img src="//arth.team/wp-content/uploads/2022/03/CONTACT-US-2-1-1.jpg" title="CONTACT-US-2-1-1" width="1600" height="800" class="rev-slidebg" data-no-retina>
+						<rs-slide data-key="rs-95" data-title="Slide" data-thumb="./Assets/Wordpress/Content/uploads/2022/03/CONTACT-US-2-1-1-50x100.jpg" data-anim="ei:d;eo:d;s:2500ms;r:0;t:slideleft;sl:d;">
+							<img src="./Assets/Wordpress/Content/uploads/2022/03/CONTACT-US-2-1-1.jpg" title="CONTACT-US-2-1-1" width="1600" height="800" class="rev-slidebg" data-no-retina>
 <!--
 							--><rs-layer
 								id="slider-21-slide-95-layer-0" 
@@ -978,8 +978,8 @@ padding: 10px;}		</style>
 							> 
 							</rs-layer><!--
 -->						</rs-slide>
-						<rs-slide data-key="rs-96" data-title="Slide" data-thumb="//arth.team/wp-content/uploads/2022/03/CONTACT-US-4-1-50x100.jpg" data-anim="ei:d;eo:d;s:2500ms;r:0;t:slideleft;sl:d;">
-							<img src="//arth.team/wp-content/uploads/2022/03/CONTACT-US-4-1.jpg" title="CONTACT-US-4-1" width="1600" height="800" class="rev-slidebg" data-no-retina>
+						<rs-slide data-key="rs-96" data-title="Slide" data-thumb="./Assets/Wordpress/Content/uploads/2022/03/CONTACT-US-4-1-50x100.jpg" data-anim="ei:d;eo:d;s:2500ms;r:0;t:slideleft;sl:d;">
+							<img src="./Assets/Wordpress/Content/uploads/2022/03/CONTACT-US-4-1.jpg" title="CONTACT-US-4-1" width="1600" height="800" class="rev-slidebg" data-no-retina>
 <!--
 							--><rs-layer
 								id="slider-21-slide-96-layer-0" 

@@ -714,8 +714,8 @@ footer {
 			<rs-module-wrap id="rev_slider_24_1_wrapper" data-source="gallery" style="background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
 				<rs-module id="rev_slider_24_1" style="" data-version="6.2.23">
 					<rs-slides>
-						<rs-slide data-key="rs-82" data-title="Slide" data-thumb="//arth.team/wp-content/uploads/2020/10/WhatsApp-Image-2020-10-20-at-17.18.25-1-50x100.jpeg" data-anim="ei:d;eo:d;s:d;r:0;t:slideleft;sl:d;">
-							<img src="//arth.team/wp-content/uploads/2020/10/WhatsApp-Image-2020-10-20-at-17.18.25-1.jpeg" title="WhatsApp Image 2020-10-20 at 17.18.25 (1)" width="1201" height="800" class="rev-slidebg" data-no-retina>
+						<rs-slide data-key="rs-82" data-title="Slide" data-thumb="./Assets/Wordpress/Content/uploads/2020/10/WhatsApp-Image-2020-10-20-at-17.18.25-1-50x100.jpeg" data-anim="ei:d;eo:d;s:d;r:0;t:slideleft;sl:d;">
+							<img src="./Assets/Wordpress/Content/uploads/2020/10/WhatsApp-Image-2020-10-20-at-17.18.25-1.jpeg" title="WhatsApp Image 2020-10-20 at 17.18.25 (1)" width="1201" height="800" class="rev-slidebg" data-no-retina>
 <!--
 							--><rs-layer
 								id="slider-24-slide-82-layer-0" 
@@ -759,8 +759,8 @@ footer {
 							> 
 							</rs-layer><!--
 -->						</rs-slide>
-						<rs-slide data-key="rs-86" data-title="Slide" data-thumb="//arth.team/wp-content/uploads/2021/12/IMG-20190907-WA0006-50x100.jpg" data-anim="ei:d;eo:d;s:d;r:0;t:slideleft;sl:d;">
-							<img src="//arth.team/wp-content/uploads/2021/12/IMG-20190907-WA0006.jpg" title="IMG-20190907-WA0006" width="1600" height="777" class="rev-slidebg" data-no-retina>
+						<rs-slide data-key="rs-86" data-title="Slide" data-thumb="./Assets/Wordpress/Content/uploads/2021/12/IMG-20190907-WA0006-50x100.jpg" data-anim="ei:d;eo:d;s:d;r:0;t:slideleft;sl:d;">
+							<img src="./Assets/Wordpress/Content/uploads/2021/12/IMG-20190907-WA0006.jpg" title="IMG-20190907-WA0006" width="1600" height="777" class="rev-slidebg" data-no-retina>
 <!--
 							--><rs-layer
 								id="slider-24-slide-86-layer-0" 
@@ -804,8 +804,8 @@ footer {
 							> 
 							</rs-layer><!--
 -->						</rs-slide>
-						<rs-slide data-key="rs-109" data-title="Slide" data-thumb="//arth.team/wp-content/uploads/2021/12/IMG-20191115-WA0003-50x100.jpg" data-anim="ei:d;eo:d;s:d;r:0;t:slideleft;sl:d;">
-							<img src="//arth.team/wp-content/uploads/2021/12/IMG-20191115-WA0003.jpg" title="IMG-20191115-WA0003" width="1600" height="777" class="rev-slidebg" data-no-retina>
+						<rs-slide data-key="rs-109" data-title="Slide" data-thumb="./Assets/Wordpress/Content/uploads/2021/12/IMG-20191115-WA0003-50x100.jpg" data-anim="ei:d;eo:d;s:d;r:0;t:slideleft;sl:d;">
+							<img src="./Assets/Wordpress/Content/uploads/2021/12/IMG-20191115-WA0003.jpg" title="IMG-20191115-WA0003" width="1600" height="777" class="rev-slidebg" data-no-retina>
 <!--
 							--><rs-layer
 								id="slider-24-slide-109-layer-0" 
@@ -849,8 +849,8 @@ footer {
 							> 
 							</rs-layer><!--
 -->						</rs-slide>
-						<rs-slide data-key="rs-110" data-title="Slide" data-thumb="//arth.team/wp-content/uploads/2021/12/WhatsApp-Image-2019-12-13-at-7.02.57-PM-50x100.jpeg" data-anim="ei:d;eo:d;s:d;r:0;t:slideleft;sl:d;">
-							<img src="//arth.team/wp-content/uploads/2021/12/WhatsApp-Image-2019-12-13-at-7.02.57-PM.jpeg" title="WhatsApp Image 2019-12-13 at 7.02.57 PM" width="1320" height="644" class="rev-slidebg" data-no-retina>
+						<rs-slide data-key="rs-110" data-title="Slide" data-thumb="./Assets/Wordpress/Content/uploads/2021/12/WhatsApp-Image-2019-12-13-at-7.02.57-PM-50x100.jpeg" data-anim="ei:d;eo:d;s:d;r:0;t:slideleft;sl:d;">
+							<img src="./Assets/Wordpress/Content/uploads/2021/12/WhatsApp-Image-2019-12-13-at-7.02.57-PM.jpeg" title="WhatsApp Image 2019-12-13 at 7.02.57 PM" width="1320" height="644" class="rev-slidebg" data-no-retina>
 <!--
 							--><rs-layer
 								id="slider-24-slide-110-layer-0" 
@@ -894,8 +894,8 @@ footer {
 							> 
 							</rs-layer><!--
 -->						</rs-slide>
-						<rs-slide data-key="rs-85" data-title="Slide" data-thumb="//arth.team/wp-content/uploads/2021/11/IMG_9086-scaled-50x100.jpg" data-anim="ei:d;eo:d;s:d;r:0;t:slideleft;sl:d;">
-							<img src="//arth.team/wp-content/uploads/2021/11/IMG_9086-scaled.jpg" title="IMG_9086" width="1200" height="800" class="rev-slidebg" data-no-retina>
+						<rs-slide data-key="rs-85" data-title="Slide" data-thumb="./Assets/Wordpress/Content/uploads/2021/11/IMG_9086-scaled-50x100.jpg" data-anim="ei:d;eo:d;s:d;r:0;t:slideleft;sl:d;">
+							<img src="./Assets/Wordpress/Content/uploads/2021/11/IMG_9086-scaled.jpg" title="IMG_9086" width="1200" height="800" class="rev-slidebg" data-no-retina>
 <!--
 							--><rs-layer
 								id="slider-24-slide-85-layer-0" 
@@ -939,8 +939,8 @@ footer {
 							> 
 							</rs-layer><!--
 -->						</rs-slide>
-						<rs-slide data-key="rs-111" data-title="Slide" data-thumb="//arth.team/wp-content/uploads/2021/11/WhatsApp-Image-2020-10-20-at-17.18.47-1024x576-1-50x100.jpeg" data-anim="ei:d;eo:d;s:d;r:0;t:slideleft;sl:d;">
-							<img src="//arth.team/wp-content/uploads/2021/11/WhatsApp-Image-2020-10-20-at-17.18.47-1024x576-1.jpeg" title="WhatsApp-Image-2020-10-20-at-17.18.47-1024&#215;576" width="1024" height="576" class="rev-slidebg" data-no-retina>
+						<rs-slide data-key="rs-111" data-title="Slide" data-thumb="./Assets/Wordpress/Content/uploads/2021/11/WhatsApp-Image-2020-10-20-at-17.18.47-1024x576-1-50x100.jpeg" data-anim="ei:d;eo:d;s:d;r:0;t:slideleft;sl:d;">
+							<img src="./Assets/Wordpress/Content/uploads/2021/11/WhatsApp-Image-2020-10-20-at-17.18.47-1024x576-1.jpeg" title="WhatsApp-Image-2020-10-20-at-17.18.47-1024&#215;576" width="1024" height="576" class="rev-slidebg" data-no-retina>
 <!--
 							--><rs-layer
 								id="slider-24-slide-111-layer-0" 
