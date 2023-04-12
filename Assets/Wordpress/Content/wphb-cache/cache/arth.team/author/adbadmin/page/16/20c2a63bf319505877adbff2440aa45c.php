@@ -50,17 +50,17 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <style id='wphb-1-inline-css' type='text/css'>
 .wpcf7 .wpcf7-recaptcha iframe {margin-bottom: 0;}.wpcf7 .wpcf7-recaptcha[data-align="center"] > div {margin: 0 auto;}.wpcf7 .wpcf7-recaptcha[data-align="right"] > div {margin: 0 0 0 auto;}
 </style>
-<link rel='stylesheet' id='google-language-translator-css'  href='https://arth.team/wp-content/uploads/hummingbird-assets/4cc022bb91010069405cc58e5de87f3b.css' type='text/css' media='' />
-<link rel='stylesheet' id='wphb-2-css'  href='https://arth.team/wp-content/uploads/hummingbird-assets/d78be0daa58bb8aa65d985f5be2d18d1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='google-language-translator-css'  href='./Assets/Wordpress/Content/uploads/hummingbird-assets/4cc022bb91010069405cc58e5de87f3b.css' type='text/css' media='' />
+<link rel='stylesheet' id='wphb-2-css'  href='./Assets/Wordpress/Content/uploads/hummingbird-assets/d78be0daa58bb8aa65d985f5be2d18d1.css' type='text/css' media='all' />
 <style id='wphb-2-inline-css' type='text/css'>
    
 #rs-demo-id {}
 </style>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Open+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;subset=latin%2Clatin-ext&#038;ver=1.0.0" /><link rel='stylesheet' id='ratio-edge-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;subset=latin%2Clatin-ext&#038;ver=1.0.0' type='text/css' media='print' onload='this.media=&#34;all&#34;' />
-<link rel='stylesheet' id='wphb-3-css'  href='https://arth.team/wp-content/uploads/hummingbird-assets/a254aabb1f7612a84bab09a948cbf3dc.css' type='text/css' media='all' />
-<script type='text/javascript' src='https://arth.team/wp-content/uploads/hummingbird-assets/74b8e6f7db8e033ea2441d7d5254d6b0.js' id='wphb-4-js'></script>
-<script type='text/javascript' src='https://arth.team/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.2.23' id='tp-tools-js'></script>
-<script type='text/javascript' src='https://arth.team/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.2.23' id='revmin-js'></script>
+<link rel='stylesheet' id='wphb-3-css'  href='./Assets/Wordpress/Content/uploads/hummingbird-assets/a254aabb1f7612a84bab09a948cbf3dc.css' type='text/css' media='all' />
+<script type='text/javascript' src='./Assets/Wordpress/Content/uploads/hummingbird-assets/74b8e6f7db8e033ea2441d7d5254d6b0.js' id='wphb-4-js'></script>
+<script type='text/javascript' src='./Assets/Wordpress/Content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.2.23' id='tp-tools-js'></script>
+<script type='text/javascript' src='./Assets/Wordpress/Content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.2.23' id='revmin-js'></script>
 <link rel="https://api.w.org/" href="https://arth.team/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://arth.team/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./Assets/Wordpress/Includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 5.9.1" />
@@ -79,10 +79,10 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 					</style>
 		<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
 <meta name="generator" content="Powered by Slider Revolution 6.2.23 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
-<link rel="icon" href="https://arth.team/wp-content/uploads/2020/10/cropped-arth-logo-1-copy-2-32x32.png" sizes="32x32" />
-<link rel="icon" href="https://arth.team/wp-content/uploads/2020/10/cropped-arth-logo-1-copy-2-192x192.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="https://arth.team/wp-content/uploads/2020/10/cropped-arth-logo-1-copy-2-180x180.png" />
-<meta name="msapplication-TileImage" content="https://arth.team/wp-content/uploads/2020/10/cropped-arth-logo-1-copy-2-270x270.png" />
+<link rel="icon" href="./Assets/Wordpress/Content/uploads/2020/10/cropped-arth-logo-1-copy-2-32x32.png" sizes="32x32" />
+<link rel="icon" href="./Assets/Wordpress/Content/uploads/2020/10/cropped-arth-logo-1-copy-2-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="./Assets/Wordpress/Content/uploads/2020/10/cropped-arth-logo-1-copy-2-180x180.png" />
+<meta name="msapplication-TileImage" content="./Assets/Wordpress/Content/uploads/2020/10/cropped-arth-logo-1-copy-2-270x270.png" />
 <script type="text/javascript">function setREVStartSize(e){
 			//window.requestAnimationFrame(function() {				 
 				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;	
@@ -780,7 +780,7 @@ Hyderabad, Ranga Reddy &#8211; 500032<br />
 var awsmTeamPublic = {"ajaxurl":"https:\/\/arth.team\/wp-admin\/admin-ajax.php","deep_linking":{"enable":"enable","member":{"prefix":"member","suffix":"info"},"team":{"prefix":"team","suffix":"info"}},"scripts_src":"https:\/\/arth.team\/wp-content\/plugins\/awsm-team-pro\/js"};;;var ht_ctc_chat_var = {"number":"918886606722","pre_filled":"Hello Arth.Team!!\r\nName:\r\nLike to know more information about ,","dis_m":"show","dis_d":"show","css":"display: none; cursor: pointer; z-index: 99999999;","pos_d":"position: fixed; bottom: 15px; right: 15px;","pos_m":"position: fixed; bottom: 15px; right: 15px;","schedule":"no","se":"150","ani":"no-animations","url_structure_d":"web","url_target_d":"_blank","ga":"yes","fb":"yes"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='https://arth.team/wp-content/uploads/hummingbird-assets/ac4737524660b61981301623d73fcf95.js' id='wphb-5-js'></script>
+<script type='text/javascript' src='./Assets/Wordpress/Content/uploads/hummingbird-assets/ac4737524660b61981301623d73fcf95.js' id='wphb-5-js'></script>
 <script type='text/javascript' src='./Assets/Wordpress/Includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9' id='regenerator-runtime-js'></script>
 <script type='text/javascript' src='./Assets/Wordpress/Includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
 <script type='text/javascript' id='wphb-6-js-extra'>
@@ -788,18 +788,18 @@ var awsmTeamPublic = {"ajaxurl":"https:\/\/arth.team\/wp-admin\/admin-ajax.php",
 var wpcf7 = {"api":{"root":"https:\/\/arth.team\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='https://arth.team/wp-content/uploads/hummingbird-assets/7365f23142987fdded5004b2267ef410.js' id='wphb-6-js'></script>
+<script type='text/javascript' src='./Assets/Wordpress/Content/uploads/hummingbird-assets/7365f23142987fdded5004b2267ef410.js' id='wphb-6-js'></script>
 <script type='text/javascript' id='wphb-7-js-before'>
 var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
 </script>
-<script type='text/javascript' src='https://arth.team/wp-content/uploads/hummingbird-assets/1c1efd01ebf46de9b0867e951667147f.js' id='wphb-7-js'></script>
+<script type='text/javascript' src='./Assets/Wordpress/Content/uploads/hummingbird-assets/1c1efd01ebf46de9b0867e951667147f.js' id='wphb-7-js'></script>
 <script type='text/javascript' id='mediaelement-js-extra'>
 /* <![CDATA[ */
 var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='./Assets/Wordpress/Includes/js/mediaelement/wp-mediaelement.min.js?ver=5.9.1' id='wp-mediaelement-js'></script>
-<script type='text/javascript' src='https://arth.team/wp-content/uploads/hummingbird-assets/909855e8909cad99d4330c6aa11cd221.js' id='wphb-8-js'></script>
+<script type='text/javascript' src='./Assets/Wordpress/Content/uploads/hummingbird-assets/909855e8909cad99d4330c6aa11cd221.js' id='wphb-8-js'></script>
 <script type='text/javascript' src='./Assets/Wordpress/Includes/js/hoverIntent.min.js?ver=1.10.2' id='hoverIntent-js'></script>
 <script type='text/javascript' id='wphb-9-js-extra'>
 /* <![CDATA[ */
@@ -807,7 +807,7 @@ var wpcf7iqfix = {"recaptcha_empty":"Please verify that you are not a robot.","r
 var edgtfPerPageVars = {"vars":{"edgtfStickyScrollAmount":0,"edgtfHeaderTransparencyHeight":0}};
 /* ]]> */
 </script>
-<script type='text/javascript' src='https://arth.team/wp-content/uploads/hummingbird-assets/c10f0a09523f8fbde57a34daef87da80.js' id='wphb-9-js'></script>
+<script type='text/javascript' src='./Assets/Wordpress/Content/uploads/hummingbird-assets/c10f0a09523f8fbde57a34daef87da80.js' id='wphb-9-js'></script>
 </body>
 </html><script>
 
