@@ -1,0 +1,630 @@
+@import 'variables';
+@import 'mixins';
+
+/* ==========================================================================
+   #Comments styles - start
+   ========================================================================== */
+
+.edgtf-comment-holder {
+	margin: 0 0 35px;
+	padding-top: 37px;
+	box-sizing: border-box;
+
+
+	.edgtf-comment-image {
+		display: block;
+		width: 85px;
+		height: 85px;
+		float: left;
+	}
+	.edgtf-comment-text {
+		padding: 0 0 0 110px;
+		min-height: 85px;
+
+		.edgtf-comment-info {
+			display: inline-block;
+			width: 100%;
+			vertical-align: middle;
+		}
+
+		.edgtf-reply-edit-holder {
+			float: right;
+		}
+
+		.replay,
+		.comment-reply-link,
+		.comment-edit-link {
+			margin-left: 10px;
+			font-size: 12px;
+			line-height: 36px;
+			padding: 0 24px;
+			display: inline-block;
+			background-color: #f4f4f4;
+			border: 1px solid #dfdfdf;
+			color: #313131;
+			border-radius: 30px;
+			position: relative;
+			@include edgtfTransition(background-color 0.15s ease-out, color 0.15s ease-out, border-color .15s ease-out);
+
+			&:hover{
+				color: #fff;
+				background-color: $first-main-color;
+				border-color: $first-main-color;
+			}
+
+		}
+		.edgtf-comment-name-holder {
+			float: left;
+			margin-bottom: 20px;
+		}
+		.edgtf-comment-name {
+			text-transform: none;
+			font-size: 18px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 1.2em;
+
+		}
+
+		.edgtf-comment-date {
+			display: block;
+			clear: both;
+			font-family: Georgia, serif;
+			font-size: 14px;
+			font-style: italic;
+			color: $first-main-color;
+		}
+	}
+
+	.edgtf-comments-closed {
+		padding-top:16px;
+	}
+
+	.edgtf-comment.edgtf-pingback-comment{
+		.edgtf-comment-text {
+			padding: 0;
+			min-height: 0;
+		}
+
+		.edgtf-comment-name-holder{
+			margin-bottom: 0;
+		}
+	}
+
+}
+
+.comment-respond {
+	.comment-reply-title {
+		margin-bottom: 20px;
+
+		&.edgtf-comment-reply-title-registered {
+			margin-bottom: 0;
+		}
+	}
+
+	.logged-in-as {
+		padding: 0;
+		margin: 0;
+	}
+
+	.edgtf-comment-registered-user {
+		.logged-in-as {
+			margin-bottom: 20px;
+		}
+	}
+
+	.form-submit {
+		margin: 0;
+		padding: 0;
+		text-align: right;
+	}
+}
+.edgtf-comment-list {
+	list-style: none;
+	position: relative;
+	z-index: 150;
+	padding: 0;
+	margin: 0;
+
+	li {
+		display: inline-block;
+		position: relative;
+		width: 100%;
+
+		.edgtf-comment {
+			padding-top: 28px;
+			padding-bottom: 28px;
+			border-bottom: 1px solid $default-border-color;
+
+			p {
+				margin: 0;
+			}
+		}
+
+		@for $i from 2 through 10 {
+			&.depth-#{$i} .edgtf-comment {
+				padding-left: 110px * ($i - 1);
+			}
+		}
+
+		&.depth-1:last-child {
+			.edgtf-comment:last-child {
+				border-bottom: 0;
+			}
+		}
+	}
+
+	.children {
+		padding: 0 0 0 0;
+	}
+}
+
+
+
+
+%input-style{
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 26px;
+	padding: 16.5px 15px;
+	border: 1px solid #d7d7d7;
+	outline: 0;
+	font-family: inherit;
+	font-size: 14px;
+	background-color: #fff;
+	color: $default-text-color;
+	@include edgtfBoxSizing(border-box);
+	vertical-align: middle;
+
+	&:focus{
+		border-color: $first-main-color;
+	}	
+}
+
+.wpcf7-form-control{
+	&.wpcf7-text,
+	&.wpcf7-number,
+	&.wpcf7-date,
+	&.wpcf7-textarea,
+	&.wpcf7-select,
+	&.wpcf7-quiz{
+		@extend %input-style;
+	}
+}
+
+#respond textarea,
+#respond input[type='text'],
+.post-password-form input[type='password']{
+	@extend %input-style;
+}
+
+#submit_comment,
+.post-password-form input[type='submit']{
+	display: inline-block;
+	width: auto;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 20px;
+	border: 1px solid $first-main-color;
+	font-size: 13px;
+	font-family: inherit;
+	color: #fff;
+	background-color: $first-main-color;
+	cursor: pointer;
+	@include edgtfTransition(all 0.15s ease-out);
+
+	&:hover{
+		color: $first-main-color;
+		background-color: #fff;
+	}
+}
+
+/* ==========================================================================
+   #Comments styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   #Pagination styles - start
+   ========================================================================== */
+
+.edgtf-container.edgtf-container-bottom-navigation {
+
+	background-color: #f7f7f7;
+	padding: 37px 0;
+
+	.edgtf-container-inner {
+		padding: 0 !important;
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+
+}
+
+
+.edgtf-pagination-holder {
+
+	.edgtf-pagination {
+		display: inline-block;
+		width: 100%;
+		vertical-align: middle;
+		position: relative;
+		text-align: center;
+
+		ul {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			float: left;
+			text-align: center;
+			display: block;
+
+			a,
+			&.active span {
+				position: relative;
+				display: inline-block;
+				padding: 0 15px;
+				margin: 0;
+				vertical-align: middle;
+				text-decoration: none;
+				font-weight: 600;
+				font-size: 18px;
+				cursor: pointer;
+				white-space: nowrap;
+				box-sizing: content-box;
+				color:#000;
+
+			}
+			&.active span {
+				color: #959595;
+			}
+			&.edgtf-pagination-prev,
+			&.edgtf-pagination-next,
+			&.edgtf-pagination-first-page,
+			&.edgtf-pagination-last-page
+			{
+				position: absolute;
+				a{
+					font-size: 25px;
+					padding: 0;
+				}
+
+			}
+
+			&.edgtf-pagination-prev {
+				left: 0;
+				&.edgtf-pagination-prev-first {
+					left: 25px;
+				}
+			}
+			&.edgtf-pagination-first-page {
+				left: 0;
+			}
+
+			&.edgtf-pagination-next {
+				right: 0;
+				&.edgtf-pagination-next-last {
+					right: 25px;
+				}
+			}
+			&.edgtf-pagination-last-page {
+				right: 0;
+			}
+		}
+	}
+}
+
+.edgtf-single-links-pages{
+	margin-top: 35px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 18px;
+
+	.edgtf-single-links-pages-inner{
+
+		> a,
+		> span{
+			display: inline-block;
+			height: 30px;
+			width: 30px;
+			line-height: 30px;
+			text-align: center;
+		}
+
+		> span{
+			color: $second-text-color;
+		}
+	}
+}
+/* ==========================================================================
+   #Pagination styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   #Slick Slider navigation - start
+   ========================================================================== */
+.slick-slider {
+
+	.edgtf-slick-prev,
+	.edgtf-slick-next {
+		position: absolute;
+		z-index: 100;
+		top: 50%;
+		display: block;
+		padding: 0;
+		cursor: pointer;
+		border: none;
+		outline: none;
+		font-size: 30px;
+		color: #fff;
+		@include edgtfTransform(translateY(-50%));
+		span {
+			@include edgtfTransition(all 0.2s ease-out);
+		}
+	}
+
+	.edgtf-slick-prev {
+		left: 0;
+		&:hover {
+			span {
+				@include edgtfTransform(translateX(-5px));
+			}
+		}
+	}
+
+	.edgtf-slick-next {
+		right: 0;
+		&:hover {
+			span {
+				@include edgtfTransform(translateX(5px));
+			}
+		}
+	}
+
+	.edgtf-slick-dots {
+		text-align: center;
+		margin: 40px 0 0 0;
+		padding: 0;
+
+
+		li {
+			width: 10px;
+			height: 10px;
+			border-radius: 10px;
+			border: 1px solid $first-main-color;
+			background-color: transparent;
+			box-sizing: border-box;
+			display: inline-block;
+			margin: 0 8px;
+			cursor: pointer;
+
+			&.slick-active {
+				@include edgtfBackgroundGradient();
+			}
+
+		}
+	}
+
+}
+
+/* ==========================================================================
+   #Slick Slider navigation - end
+   ========================================================================== */
+
+/* ==========================================================================
+   #404 styles - start
+   ========================================================================== */
+
+.edgtf-404-page{
+	padding: 0;
+}
+
+.edgtf-page-not-found{
+	margin: 148px 0 155px;
+
+	.edgtf-page-not-found-part{
+		float: left;
+		width: 50%;
+		padding: 15px;
+		box-sizing: border-box;
+	}
+
+	h2{
+		margin-bottom: 26px;
+	}
+
+	p{
+		margin-bottom: 37px
+	}
+
+	.edgtf-404-text {
+		font-size: 325px;
+		font-weight: 100;
+		color: #dadada;
+		line-height: .5em;
+		display: block;
+		text-align: right;
+	}
+}
+
+/* ==========================================================================
+   #404 styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   #Back to Top styles - start
+   ========================================================================== */
+$back-to-top-size:40px;
+#edgtf-back-to-top{
+    position: fixed;
+    width:$back-to-top-size;
+    right: $back-to-top-size;
+    bottom: 17px;
+    margin: 0;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    @include edgtfTransition(opacity .35s ease-out, visibility 0.35s);
+
+
+    .edgtf-outline {
+    	top:0px;
+    	left:0px;
+    	height: $back-to-top-size;
+    	width: $back-to-top-size;
+    	background: transparent;
+    	.edgtf-line-1,
+    	.edgtf-line-2,
+    	.edgtf-line-3,
+    	.edgtf-line-4 {
+    		-webkit-animation:none;
+    		animation:none;
+    		@include edgtfTransition(all .4s);
+
+    	}
+    	&:after {
+    		display: none;
+    	}
+    }
+}
+#edgtf-back-to-top.off{
+    opacity: 0;
+    visibility: hidden;
+    @include edgtfTransition(opacity .35s ease-out, visibility 0.35s);
+    span span {
+    	background-color: transparent;
+    	@include edgtfTransition(background-color .35s ease-out);
+    	&:after{
+			@include edgtfTransition(opacity .2s);
+    	}
+    }
+}
+    
+#edgtf-back-to-top.on{
+    opacity: 1;
+    visibility: visible;
+    @include edgtfTransition(opacity 0.2s ease-out);
+    @include edgtfTransform(translateZ(0));
+    .edgtf-outline {
+    	.edgtf-line-1,
+    	.edgtf-line-4 {
+    		height: 100%;
+    		opacity:1;
+    		@include edgtfTransition(all .45s cubic-bezier(0.165, 0.84, 0.44, 1), opacity .15s);
+    	}
+    	.edgtf-line-2,
+    	.edgtf-line-3 {
+    		width: 100%;
+    		opacity:1;
+    		@include edgtfTransition(all .45s cubic-bezier(0.165, 0.84, 0.44, 1), opacity .15s);
+    	}
+    }
+}
+
+#edgtf-back-to-top > span {
+	width:$back-to-top-size;
+	height: $back-to-top-size;
+	line-height:$back-to-top-size;
+	text-align:center;
+    display: block;
+	color: #fff;
+    font-size:20px;
+    @include edgtfTransition(color 0.15s ease-out);
+	box-sizing: border-box;
+}
+
+#edgtf-back-to-top span span {
+	display: block;
+	line-height: inherit;
+	position: relative;
+	background-color: $first-main-color;
+    @include edgtfTransition(background-color .8s cubic-bezier(0.165, 0.84, 0.44, 1) .25s);
+	&:before {
+		position: relative;
+		display: inline-block;
+		z-index: 20;
+		@include edgtfTransition(all .15s ease-out);
+	}
+	&:after {
+		content:'';
+		position: absolute;
+		top:0;
+		left:0;
+		height: 100%;
+		width:100%;
+		@include edgtfBackgroundGradient();
+		@include edgtfTransition(opacity .3s);
+		opacity:0;
+	}
+}
+
+#edgtf-back-to-top:hover > span {
+	span:after {
+		opacity:1;
+	}
+	span:before {
+		@include edgtfTransform(translateY(-2px));
+	}
+}
+    
+/* ==========================================================================
+   #Back to Top styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   #Self Hosted Video styles - start
+   ========================================================================== */
+.edgtf-self-hosted-video-holder{
+	.edgtf-video-wrap{
+		.mejs-container,
+		.mejs-overlay-play{
+			height: 100% !important; /*!important because of the inline style*/
+			width: 100% !important; /*!important because of the inline style*/
+		}
+	}
+}
+
+/* ==========================================================================
+   #Self Hosted Video styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   #Screen reader text - start
+   ========================================================================== */
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+
+	&:focus {
+		background-color: #f1f1f1;
+		border-radius: 3px;
+		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+		clip: auto !important;
+		color: #21759b;
+		display: block;
+		font-size: 14px;
+		font-size: 0.875rem;
+		font-weight: bold;
+		height: auto;
+		left: 5px;
+		line-height: normal;
+		padding: 15px 23px 14px;
+		text-decoration: none;
+		top: 5px;
+		width: auto;
+		z-index: 100000; /* Above WP toolbar. */
+	}
+
+}
+
+/* ==========================================================================
+   #Screen reader text - end
+   ========================================================================== */

@@ -1,0 +1,192 @@
+/* ==========================================================================
+# Tabs style - begin
+========================================================================== */
+.edgtf-tabs {
+    
+    .edgtf-tabs-nav {
+        display: block;
+        position: relative;
+        list-style: none outside none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        vertical-align: middle;
+        @include edgtfBoxSizing(border-box);
+
+        li {
+            margin: 0;
+            position: relative;
+            margin-right:4px;
+
+            a {
+                position: relative;
+                display: block;
+                padding: 12px 22px;
+                color: $default-text-color;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+	            background-color:#fff;
+	            border: 1px solid $default-border-color;
+                @include edgtfBoxSizing(border-box);
+                @include edgtfTransition(color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out);
+
+                i,
+                span {
+                    @include edgtfTransition(initial);
+                }
+
+                .edgtf-icon-frame {
+                    display: inline-block;
+                    min-width: 20px;
+                    line-height: 1;
+                    vertical-align: middle;
+                }
+
+                .edgtf-tab-text-after-icon {
+                    @include edgtfTransition(initial);
+                    vertical-align: middle;
+                }
+            }
+
+			.edgtf-tabs-gradient{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+				@include edgtfBackgroundGradient();
+				@include edgtfTransition(opacity .15s ease-out);
+				z-index: -1;
+			}
+
+			&.ui-state-active,
+			&.ui-state-hover {
+
+				a{
+					color: #fff;
+					background-color: transparent;
+					border-color: transparent;
+				}
+				
+				.edgtf-tabs-gradient{
+					opacity: 1;
+				}
+			}
+        }
+    }
+
+    .edgtf-tab-container {
+        position: relative;
+        @include edgtfBoxSizing(border-box);
+    }
+}
+
+/* Icon tabs styles
+   ========================================================================== */
+.edgtf-tabs.edgtf-horizontal-tab.edgtf-tab-with-icon ul li a {
+
+    .edgtf-tab-text-after-icon {
+        padding: 0 4px 0 0;
+    }
+}
+
+.edgtf-tabs.edgtf-vertical-tab.edgtf-tab-with-icon ul li a {
+
+    .edgtf-tab-text-after-icon {
+        padding: 0 0 0 13px;
+    }
+}
+
+@include keyframes(edgtf-appear) {
+    0% {
+        opacity: 0;
+        @include edgtfTransform(translateX(25px));
+    }
+    30% {
+        opacity: .1;
+        @include edgtfTransform(translateX(15px));
+    }
+    100% {
+        opacity: 1;
+        @include edgtfTransform(translateX(0px));
+    }
+}
+
+@include keyframes(edgtf-appear-top) {
+	0% {
+		opacity: 0;
+		@include edgtfTransform(translateY(-25px));
+	}
+	30% {
+		opacity: .1;
+		@include edgtfTransform(translateY(-15px));
+	}
+	100% {
+		opacity: 1;
+		@include edgtfTransform(translateY(0px));
+	}
+}
+
+/* Horizontal tabs styles
+   ========================================================================== */
+.edgtf-tabs.edgtf-horizontal-tab {
+    
+    .edgtf-tabs-nav li {
+        float: left;
+
+        a {
+            text-align: center;
+        }
+    }
+
+    .edgtf-tab-container {
+        padding: 25px 10px 25px 0;
+    }
+
+	&.edgtf-tab-with-icon ul li:hover .edgtf-icon-frame  {
+		@include edgtfAnimation(edgtf-appear .35s forwards ease);
+	}
+}
+
+/* Vertical tabs styles
+   ========================================================================== */
+.edgtf-tabs.edgtf-vertical-tab {
+    
+    .edgtf-tabs-nav {
+        float: left;
+        width: 30%;
+
+        li {
+            position: relative;
+            display: block;
+            width: 100%;
+            margin-right:0;
+            margin-bottom:4px;
+
+            &:last-child {
+                margin: 0;
+            }
+        }   
+    }
+
+    .edgtf-tab-container {
+        float: left;
+        width: 70%;
+        padding: 10px 30px;
+    }
+
+	&.edgtf-tab-with-icon ul li:hover .edgtf-icon-frame  {
+		@include edgtfAnimation(edgtf-appear-top .35s forwards ease);
+	}
+}
+
+.edgtf-tabs.edgtf-vertical-tab.edgtf-tab-only-icon {
+    
+    .edgtf-tabs-nav li a {
+        text-align: center;
+    }
+}
+/* ==========================================================================
+# Tabs style - end
+========================================================================== */

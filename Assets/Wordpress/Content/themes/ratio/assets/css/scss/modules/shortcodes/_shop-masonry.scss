@@ -1,0 +1,57 @@
+/* ==========================================================================
+   Shop masonry start style
+   ========================================================================== */
+.edgtf-shop-masonry {
+	.products {
+		list-style: none;
+	}
+
+	.edgtf-btn.added {
+		display: none;
+	}
+
+	.edgtf-masonry-product-image-holder {
+		overflow: hidden;
+	}
+
+	img {
+		vertical-align: middle;
+		-webkit-transition: -webkit-transform 2s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+		-ms-transition: -ms-transform 2s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+		transition: transform 2s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+		-webkit-backface-visibility: hidden;
+	}
+
+	.edgtf-shop-list-masonry-grid-sizer,
+	.edgtf-shop-product {
+		width: 25%;
+		overflow: visible;
+	}
+
+	.edgtf-large-width-masonry-item,
+	.edgtf-large-width-height-masonry-item {
+		width: 50%;
+	}
+
+	.edgtf-shop-filter-holder ul {
+		list-style-type: none;
+
+		li {
+			display: inline-block;
+			margin-left: 22px;
+			cursor: pointer;
+			color: #868686;
+			line-height: 40px;
+		}
+		li:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+.edgtf-shop-list-masonry {
+	opacity: 0;
+}
+/* ==========================================================================
+   Shop masonry end style
+   ========================================================================== */

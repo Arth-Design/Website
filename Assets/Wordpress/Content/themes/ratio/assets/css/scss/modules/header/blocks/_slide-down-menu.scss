@@ -1,0 +1,467 @@
+/* ==========================================================================
+# Slidedown menu style - begin
+========================================================================== */
+
+/* Slidedown general style - begin
+========================================================================== */
+
+.edgtf-dark-header .edgtf-page-header > div:not(.edgtf-sticky-header):not(.fixed) .edgtf-slidedown-menu-opener:not(.opened) .edgtf-line,
+.edgtf-dark-header.edgtf-header-style-on-scroll .edgtf-page-header .edgtf-slidedown-menu-opener:not(.opened) .edgtf-line,
+.edgtf-dark-header .edgtf-top-bar .edgtf-slidedown-menu-opener:not(.opened) .edgtf-line {
+	background-color: $header-dark-color !important;
+}
+
+.edgtf-light-header .edgtf-page-header > div:not(.edgtf-sticky-header):not(.fixed) .edgtf-slidedown-menu-opener:not(.opened) .edgtf-line,
+.edgtf-light-header.edgtf-header-style-on-scroll .edgtf-page-header .edgtf-slidedown-menu-opener:not(.opened) .edgtf-line,
+.edgtf-light-header .edgtf-top-bar .edgtf-slidedown-menu-opener:not(.opened) .edgtf-line {
+	background-color: $header-light-color !important;
+}
+
+.edgtf-slidedown-menu-opener {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	text-align: left;
+
+	.edgtf-line {
+		background-color: #7d7d7d;
+		height: 2px;
+		margin: 0;
+		width: 20px;
+		top: 0;
+		left: 0;
+		@include edgtfTransition(all 0.15s ease-out);
+		position: absolute;
+		display: inline-block;
+	}
+
+	.edgtf-line:after,
+	.edgtf-line:before {
+		background-color: inherit;
+		content: "";
+		display: block;
+		height: 2px;
+		position: absolute;
+		width: 20px;
+		z-index: 1;
+		-webkit-backface-visibility: hidden; /*because X sign jumps on hover in Chrome*/
+		outline:1px solid transparent;
+	}
+
+	.edgtf-line:before {
+		top: -5px;
+		-webkit-transition: -webkit-transform .15s cubic-bezier(0.165, 0.84, 0.44, 1), top .15s cubic-bezier(0.165, 0.84, 0.44, 1) .15s;
+		transition: transform .15s cubic-bezier(0.165, 0.84, 0.44, 1), top .15s cubic-bezier(0.165, 0.84, 0.44, 1) .15s;
+	}
+
+	.edgtf-line:after {
+		top: 5px;
+		@include edgtfTransition(top .15s cubic-bezier(0.165, 0.84, 0.44, 1) .15s);
+	}
+	&:hover {
+		.edgtf-line {
+			background-color: $first-main-color;
+		}
+
+		.edgtf-line:before {
+			top: 0;
+			-webkit-transition: -webkit-transform .35s cubic-bezier(0.165, 0.84, 0.44, 1) .15s, top .35s cubic-bezier(0.165, 0.84, 0.44, 1);
+			transition: transform .35s cubic-bezier(0.165, 0.84, 0.44, 1) .15s, top .35s cubic-bezier(0.165, 0.84, 0.44, 1);
+			@include edgtfTransform(rotate(90deg));
+		}
+
+		.edgtf-line:after {
+			top: 0;
+			@include edgtfTransition(top .2s);
+		}
+	}
+}
+.edgtf-header-slide-down{
+	.edgtf-page-header .edgtf-menu-area{
+		border-bottom: 1px solid #d5d5d5;
+		box-sizing: border-box;
+	}
+}
+.edgtf-slidedown-menu-opener-inner {
+	position: absolute;
+	display: inline-block;
+	height: 33px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.edgtf-slidedown-menu-opener:hover {
+
+	.edgtf-line {
+		background-color: $first-main-color;
+	}
+
+}
+
+.edgtf-slidedown-menu-opener.opened {
+	.edgtf-line {
+		background-color: $first-main-color;
+	}
+
+	.edgtf-line:before {
+		top: 0;
+		-webkit-transition: -webkit-transform .35s cubic-bezier(0.165, 0.84, 0.44, 1) .15s, top .35s cubic-bezier(0.165, 0.84, 0.44, 1);
+		transition: transform .35s cubic-bezier(0.165, 0.84, 0.44, 1) .15s, top .35s cubic-bezier(0.165, 0.84, 0.44, 1);
+		@include edgtfTransform(rotate(90deg));
+	}
+
+	.edgtf-line:after {
+		top: 0;
+		@include edgtfTransition(top .2s);
+	}
+}
+
+.edgtf-slidedown-menu-holder-outer {
+	position: fixed;
+	z-index: 165;
+	background-color: #fefefe;
+	padding: 37px 0 40px;
+	width: 100%;
+	@include edgtfTransition(all 0.7s cubic-bezier(0.93, -0.01, 0.05, 0.88));
+	box-sizing: border-box;
+	transform: translateY(-100%);
+	top: 0;
+	-moz-box-shadow: 0px 1px 5px 0px rgba(163,163,163,0.33);
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(163,163,163,0.33);
+	box-shadow: 0px 1px 5px 0px rgba(163,163,163,0.33);
+
+	&.opened {
+		@include edgtfTransform(translateY(0));
+		.edgtf-slidedown-menu-holder-inner .edgtf-line-3-x {
+			opacity: 1;
+			-webkit-transform-origin: 0 50%;
+			transform-origin: 0 50%;
+			@include edgtfTransform(rotate(45deg) scale(1.23,1));
+			-webkit-transition: -webkit-transform .7s cubic-bezier(0.18, 0.89, 0.32, 1.28) .5s;
+			transition: transform .7s cubic-bezier(0.18, 0.89, 0.32, 1.28) .5s;
+		}
+
+		.edgtf-slidedown-menu-holder-inner .edgtf-line-5-x {
+			opacity: 1;
+			-webkit-transform-origin: 0 50%;
+			transform-origin: 0 50%;
+			@include edgtfTransform(rotate(-45deg) scale(1.23,1));
+			-webkit-transition: -webkit-transform .7s cubic-bezier(0.18, 0.89, 0.32, 1.28) .5s;
+			transition: transform .7s cubic-bezier(0.18, 0.89, 0.32, 1.28) .5s;
+		}
+	}
+
+	.edgtf-slidedown-menu-holder-inner  {
+		position: static; //important for close menu item positioning
+
+		.edgtf-slidedown-menu-close {
+		    position:absolute;
+		    height:33px;
+		    width:33px;
+		    top:20px;
+		    right:22px;
+		    display: block;
+		    z-index: 333;
+		}
+
+		%edgtf-slidedown-close-lines {
+			background-color: $first-main-color;
+			height: 2px;
+			margin: 0;
+			position: absolute;
+			display: inline-block;
+			@include edgtfTransition(all .2s ease-out);
+		}
+
+		.edgtf-line-3-x {
+			@extend %edgtf-slidedown-close-lines;
+			top:8px;
+			width: 18px;
+			left: 8px;
+			opacity: 0;
+			outline:1px solid transparent; //moz blur fix
+		}
+
+		.edgtf-line-5-x {
+			@extend %edgtf-slidedown-close-lines;
+			top:24px;
+			width: 18px;
+			left: 8px;
+			opacity: 0;
+			outline:1px solid transparent; //moz blur fix
+		}
+	}
+
+	.edgtf-slidedown-part {
+		box-sizing: border-box;
+		padding: 0 30px 0 30px;
+		display: table;
+		vertical-align: middle;
+		table-layout: fixed;
+
+		.edgtf-slidedown-part-inner {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		.edgtf-slidedown-logo-wrapper a{
+			display: block;
+
+			img {
+				height: 100%;
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+
+		&.edgtf-slidedown-logo-holder {
+			text-align: center;
+		}
+	}
+
+	.edgtf-slidedown-menu {
+		width: 66.666666666666666666666666666667%;
+		float: left;
+	}
+
+	.edgtf-slidedown-part {
+		width: 16.666666666666666666666666666667%;
+		float: left;
+
+	}
+	.edgtf-slidedown-right-widget-holder{
+		box-sizing: border-box;
+
+		.edgtf-slidedown-widget-title{
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 26px;
+			color: $first-main-color;
+			padding: 0px;
+			display: block;
+			position: relative;
+			text-decoration: none;
+			cursor: pointer;
+			text-transform: uppercase;
+			@include edgtfTransition(color 0.15s ease-out);
+			margin-bottom: 37px;
+		}
+
+	}
+	&.edgtf-slide-down-menu-widget-enabled {
+		.edgtf-slidedown-menu {
+			width:66.666666666666666666666666666667%;
+		}
+
+	}
+
+	#searchform {
+
+		position: relative;
+
+		.screen-reader-text {
+			display: none;
+		}
+
+		input[type="text"]{
+			background-color: #fff;
+			border: 1px solid $first-main-color;
+			width: 100%;
+			font-family: inherit;
+			font-size: 14px;
+			padding: 13px 20px 13px 20px;
+			box-sizing: border-box;
+			color: $default-text-color;
+			outline: none;
+		}
+
+		input[type="submit"]{
+			width: 48px;
+			height: 100%;
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			outline: 0;
+			border: 0;
+			text-decoration: none;
+			@include edgtfBackgroundGradient();
+			color: #fff;
+			font-family: 'ElegantIcons';
+			cursor: pointer;
+			white-space: nowrap;
+			position: absolute;
+			right: 0;
+			top: 0;
+			font-size: 18px;
+			font-weight: normal;
+		}
+
+		::-webkit-input-placeholder {
+			color: $default-text-color;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+			color: $default-text-color;
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+			color: $default-text-color;
+		}
+
+		:-ms-input-placeholder {
+			color: $default-text-color;
+		}
+
+	}
+
+}
+
+nav.edgtf-slidedown-menu {
+	margin: 0 auto;
+	position: relative;
+	top: 0;
+	text-align: left;
+
+	ul {
+		position: relative;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		li {
+			margin: 0;
+			padding: 0;
+			text-align: left;
+		}
+
+		li a {
+			font-size: 16px;
+			line-height: 26px;
+			color: #111111;
+			padding: 0;
+			display: block;
+			position: relative;
+			text-decoration: none;
+			cursor: pointer;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			@include edgtfTransition(color 0.15s ease-out);
+
+			.edgtf-item-outer{
+				position: relative;
+			}
+
+	        .edgtf-item-outer:after  {
+	            content:'';
+	            position:absolute;
+	            bottom: -2px;
+	            width:0;
+	            height:0;
+	            border-bottom:1px solid $first-main-color;
+	            left:0;
+	            @include edgtfTransition(width .2s ease-out);
+	        }
+
+	        &:hover .edgtf-item-outer:after  {
+	        	width: 100%;
+	        }
+
+		}
+
+		li a span {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		li ul li {
+			width: 100%;
+		}
+		li ul li a {
+
+			font-size: 13px;
+			line-height: 21px;
+			padding: 4.5px 0;
+		}
+
+		li ul li ul li a {
+			font-size: 0.8em;
+			line-height: 1em;
+		}
+
+	}
+
+	> ul {
+		display: block;
+
+		> li {
+			position: relative;
+			float: left;
+			width: 25%;
+			box-sizing: border-box;
+			padding: 0 20px;
+
+			&:before{
+				content: '';
+				position: absolute;
+				top: 11px;
+				left: 0;
+				height: calc(100% - 18px);
+				width: 1px;
+				background-color: #dedede;
+			}
+
+			> a {
+				margin-bottom: 21px;
+				position: relative;
+				padding-bottom: 8px;
+
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 50px;
+					height: 1px;
+					background-color: $first-main-color;
+				}
+
+				.edgtf-item-outer:after{
+					display: none;
+				}
+			}
+
+			&:last-child:after{
+				content: '';
+				position: absolute;
+				top: 11px;
+				right: 0;
+				height: calc(100% - 18px);
+				width: 1px;
+				background-color: #dedede;
+			}
+
+		}
+	}
+
+}
+
+.edgtf-slidedown-menu-opened .edgtf-logo-wrapper {
+	visibility: hidden;
+}
+
+
+/* Slidedown general style - end
+========================================================================== */
+
+
+
+
+/* ==========================================================================
+# Slidedown menu style - end
+========================================================================== */

@@ -1,0 +1,35 @@
+/* ==========================================================================
+# Portfolio Single Big Slider - begin
+========================================================================== */
+
+.big-slider {
+
+	.edgtf-column1{
+		border-right: 1px solid $first-main-color;
+		box-sizing: border-box;
+	}
+
+	.edgtf-big-image-holder {
+		margin-bottom: 34px;
+	}
+
+	.edgtf-portfolio-info-holder{
+		margin-top: 9px;
+	}
+
+	&.edgtf-portfolio-single-holder{
+
+		.edgtf-portfolio-title{
+			margin-top: 9px;
+		}
+
+		.edgtf-portfolio-content{
+			margin-bottom: 10px;
+		}
+	}
+
+}
+
+/* ==========================================================================
+# Portfolio Single Big Slider - end
+========================================================================== */

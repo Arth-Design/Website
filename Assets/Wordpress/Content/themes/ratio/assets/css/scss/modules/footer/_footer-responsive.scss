@@ -1,0 +1,19 @@
+@include ipad-portrait{
+	footer .edgtf-footer-bottom-holder{
+		.edgtf-two-columns-50-50 .edgtf-column{
+			width: 50%;
+		}
+	}
+}
+
+@include phone-landscape{
+	footer .edgtf-footer-bottom-holder{
+		.edgtf-two-columns-50-50 .edgtf-column{
+			width: 100%;
+
+			&:last-child .edgtf-column-inner{
+				text-align: left;
+			}
+		}
+	}
+}

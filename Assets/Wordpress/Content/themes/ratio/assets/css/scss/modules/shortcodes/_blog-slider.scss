@@ -1,0 +1,116 @@
+/* ==========================================================================
+# Blog Slider style - begin
+========================================================================== */
+.edgtf-blog-slider{
+
+	.edgtf-blog-slide-title {
+		margin-bottom: 2px;
+	}
+
+	.edgtf-blog-slide-post-info {
+		font-family: Georgia, serif;
+		font-size: 14px;
+		font-style: italic;
+		margin-bottom: 43px;
+		color: $first-main-color;
+
+		> div {
+			display: inline-block;
+			position: relative;
+			padding-right: 12px;
+			margin-right: 12px;
+
+			&:after {
+				content: '|';
+				position: absolute;
+				right: 0;
+				top: 50%;
+				color: #b7b7b7;
+				@include edgtfTransform(translateY(-50%));
+			}
+
+			a {
+				color: $first-main-color;
+			}
+		}
+
+		> div:last-child {
+			margin-right: 0;
+			padding-right: 0;
+
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	.edgtf-blog-slide-excerpt {
+		margin-top: 0;
+		margin-bottom: 84px;
+	}
+
+	.edgtf-blog-slide-image {
+		img {
+			vertical-align: middle;
+			display: block;
+		}
+	}
+
+	.edgtf-blog-slide-info-holder {
+		padding: 36px 30px 16px;
+		background-color: #fff;
+		border:1px solid $default-border-color;
+		@include edgtfTransition(border-color 0.2s ease-out);
+	}
+
+	.edgtf-blog-slide-read-more {
+		padding: 0;
+	}
+
+/* #Blog simple slider - start
+========================================================================== */
+
+	&.edgtf-blog-slider-type-slider {
+
+
+
+	}
+/* #Blog simple slider - end
+========================================================================== */
+
+
+/* #Blog carousel - start
+========================================================================== */
+
+	&.edgtf-blog-slider-type-carousel {
+
+		margin: 0 -13px;
+
+		.edgtf-blog-carousel-item {
+			padding: 0 13px;
+
+			&:hover {
+
+				.edgtf-blog-slide-info-holder {
+					border-color: $first-main-color;
+				}
+
+			}
+
+		}
+	}
+
+
+
+/* #Blog carousel - end
+========================================================================== */
+
+
+
+}
+
+
+/* ==========================================================================
+# Blog Slider - end
+========================================================================== */
+

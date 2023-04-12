@@ -1,0 +1,284 @@
+.edgtf-btn {
+    display: inline-block;
+    position: relative;
+    outline: none;
+    font-style: normal;
+    font-weight: 700;
+    font-family: inherit;
+    padding: 17px 43px;
+    font-size: 11px;
+    line-height: 1.7em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border-radius: 55px;
+	background-color: transparent;
+
+    @include edgtfTransition(color 0.15s ease-out, background-color 0.15s ease-out, border-color 0.15s ease-out);
+    @include edgtfBoxSizing(border-box);
+
+    .edgtf-btn-text{
+    	position: relative;
+    	z-index: 5;
+    }
+
+	.edgtf-btn-background-holder{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: inherit;
+		z-index: 2;
+		opacity: 1;
+		@include edgtfTransition(opacity .15s ease-out);
+		@include edgtfBoxSizing(border-box);
+	}
+
+	.edgtf-btn-background-hover-holder{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: inherit;
+		z-index: 1;
+		opacity: 0;
+		@include edgtfTransition(opacity .15s ease-out);
+		@include edgtfBoxSizing(border-box);
+	}
+
+	&.edgtf-has-hover:hover{
+		.edgtf-btn-background-holder{
+			opacity: 0;
+		}
+
+		.edgtf-btn-background-hover-holder{
+			opacity: 1;
+			@include edgtfTransition(opacity 0s ease-out);
+		}
+	}
+
+    &.edgtf-btn-solid {
+    	color: #fff;
+
+		.edgtf-btn-background-holder{
+			background-color: $first-main-color;
+			border: 1px solid $first-main-color;
+		}
+
+		.edgtf-btn-background-hover-holder{
+			background-color: #313131;
+			border: 1px solid #313131;
+		}
+    }
+
+    &.edgtf-btn-outline {
+		color: #000000;
+
+		.edgtf-btn-background-holder{
+			border: 1px solid #c2c4c8;
+			background-color: transparent;
+		}
+
+		.edgtf-btn-background-hover-holder{
+			background-color: #313131;
+			border: 1px solid #313131;
+			@include edgtfTransition(opacity .15s ease-out);
+		}
+
+		&.edgtf-has-hover:hover{
+			.edgtf-btn-background-hover-holder{
+				@include edgtfTransition(opacity .15s ease-out);
+			}
+		}
+
+        &:not(.edgtf-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: #fff !important;
+        }
+
+		&.edgtf-btn-icon {
+			.edgtf-btn-icon-holder {
+				vertical-align: middle;
+				font-size: 14px;
+			}
+		}
+    }
+
+
+	&.edgtf-btn-transparent{
+		padding-left:0!important;
+		padding-right:0!important;
+		border:none;
+		background:transparent;
+		color:$second-text-color;
+		font-weight: 500;
+		text-transform: none;
+		letter-spacing: 0;
+		font-size: 13px;
+
+		&.edgtf-btn-icon {
+			.edgtf-btn-icon-holder {
+				@include edgtfTransition(all 0.15s ease-out);
+				color: $first-main-color;
+				vertical-align: middle;
+				font-size: 14px;
+			}
+		}
+
+		&.edgtf-btn-small{
+			font-size: 11px;
+		}
+
+	}
+
+	&.edgtf-btn-gradient{
+		color: #fff;
+
+		.edgtf-btn-background-holder{
+			@include edgtfBackgroundGradient();
+		}
+
+
+		.edgtf-btn-background-hover-holder{
+			background: none;
+			background-color: #313131;
+		}
+	}
+
+    &.edgtf-btn-small {
+        font-size: 10px;
+        padding: 12px 26px;
+    }
+
+    &.edgtf-btn-medium {
+        //same as default
+    }
+
+    &.edgtf-btn-large {
+        font-size: 13px;
+        padding: 16px 55px;
+    }
+
+    &.edgtf-btn-huge {
+        font-size: 14px;
+        padding: 17px 60px;
+    }
+
+    &.edgtf-btn-huge-full-width {
+        font-size: 14px;
+        padding: 17px 70px;
+    }
+
+    &.edgtf-btn-huge-full-width {
+        display: block;
+        text-align: center;
+    }
+
+    &.edgtf-btn-icon {   
+        .edgtf-btn-text {
+            margin-right: 10px;
+        }
+        .edgtf-btn-icon-holder {
+        	position: relative;
+        	z-index: 5;
+            display: inline-block;
+            -webkit-transition: -webkit-transform .15s ease-out;
+            transition: transform .15s ease-out;
+        }
+        &:hover {
+            .edgtf-btn-icon-holder {
+                @include edgtfTransform(translateX(5px));
+            }
+        }
+    }
+}
+
+input[type=submit].edgtf-btn,
+button.edgtf-btn {
+    cursor: pointer;
+}
+
+input[type=submit].edgtf-btn{
+	&.edgtf-btn-solid {
+		color: #fff;
+		background-color: $first-main-color;
+		border: 1px solid $first-main-color;
+
+        &:not(.edgtf-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: #313131 !important;
+        }
+
+        &:not(.edgtf-btn-custom-border-hover):hover{
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: #313131 !important;
+        }
+	}
+
+	&.edgtf-btn-outline {
+		color: #000000;
+		border: 1px solid #c2c4c8;
+		background-color: transparent;
+
+        &:not(.edgtf-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: #313131 !important;
+        }
+
+		.edgtf-btn-background-hover-holder{
+			background-color: #313131;
+			border: 1px solid #313131;
+			@include edgtfTransition(opacity .15s ease-out);
+		}
+
+        &:not(.edgtf-btn-custom-border-hover):hover{
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: #313131 !important;
+        }
+
+        &:not(.edgtf-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: #fff !important;
+        }
+
+		&.edgtf-btn-icon {
+			.edgtf-btn-icon-holder {
+				vertical-align: middle;
+				font-size: 14px;
+			}
+		}
+    }
+
+
+	&.edgtf-btn-transparent{
+		padding-left:0!important;
+		padding-right:0!important;
+		border:none;
+		background:transparent;
+		color:$second-text-color;
+		font-weight: 500;
+		text-transform: none;
+		letter-spacing: 0;
+		font-size: 13px;
+
+		&.edgtf-btn-icon {
+			.edgtf-btn-icon-holder {
+				@include edgtfTransition(all 0.15s ease-out);
+				color: $first-main-color;
+				vertical-align: middle;
+				font-size: 14px;
+			}
+		}
+
+		&.edgtf-btn-small{
+			font-size: 11px;
+		}
+
+	}
+
+	&.edgtf-btn-gradient{
+		color: #fff;
+		@include edgtfBackgroundGradient();
+	}
+}

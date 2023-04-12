@@ -1,0 +1,132 @@
+/* ==========================================================================
+# Image Gallery - begin
+========================================================================== */
+
+/* Image Gallery Grid - begin
+========================================================================== */
+
+.edgtf-image-gallery {
+
+	.edgtf-grayscale .edgtf-gallery-image img {
+		-webkit-filter: grayscale(100%);
+		-moz-filter: grayscale(100%);
+		filter: gray;
+		filter: grayscale(100%);
+		filter: url(img/desaturate.svg#grayscale);
+	}
+
+	.edgtf-grayscale .edgtf-gallery-image:hover img {
+		-webkit-filter: grayscale(0);
+		filter: none;
+	}
+
+
+	.edgtf-gallery-image img {
+		display: block;
+	}
+
+	.edgtf-image-gallery-grid.edgtf-gallery-columns-2 {
+
+		.edgtf-gallery-image {
+			width: 49%;
+			margin-right: 2%;
+			margin-bottom: 2%;
+			display: inline-block;
+			float: left;
+
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+
+			&:nth-child(2n+1) {
+				clear: both;
+			}
+
+		}
+	}
+
+	.edgtf-image-gallery-grid.edgtf-gallery-columns-3 {
+
+		.edgtf-gallery-image {
+			width: 32%;
+			margin-right: 2%;
+			margin-bottom: 2%;
+			display: inline-block;
+			float: left;
+
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+
+			&:nth-child(3n+1) {
+				clear: both;
+			}
+
+		}
+
+	}
+
+	.edgtf-image-gallery-grid.edgtf-gallery-columns-4 {
+
+		.edgtf-gallery-image {
+			width: 24%;
+			margin-right: 1.33333%;
+			margin-bottom: 1.33333%;
+			display: inline-block;
+			float: left;
+
+			&:nth-child(4n) {
+				margin-right: 0;
+			}
+
+			&:nth-child(4n+1) {
+				clear: both;
+			}
+
+		}
+
+	}
+
+	.edgtf-image-gallery-grid.edgtf-gallery-columns-5 {
+
+		.edgtf-gallery-image {
+			width: 19%;
+			margin-right: 1.25%;
+			margin-bottom: 1.25%;
+			display: inline-block;
+			float: left;
+
+			&:nth-child(5n) {
+				margin-right: 0;
+			}
+
+			&:nth-child(5n+1) {
+				clear: both;
+			}
+
+		}
+
+	}
+
+}
+
+/* Image Gallery Grid - end
+========================================================================== */
+
+/* Image Gallery Slider - begin
+========================================================================== */
+
+.edgtf-image-gallery {
+
+	a.slick-slide img{
+		width: 100%;
+	}
+
+}
+
+/* Image Gallery Slider - end
+========================================================================== */
+
+/* ==========================================================================
+# Image Gallery - end
+========================================================================== */

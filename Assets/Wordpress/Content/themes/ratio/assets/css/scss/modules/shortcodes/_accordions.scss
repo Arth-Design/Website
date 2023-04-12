@@ -1,0 +1,118 @@
+/* ==========================================================================
+   Accordion shortcode start styles
+   ========================================================================== */
+.edgtf-accordion-holder{
+	position: relative;
+    
+    .edgtf-accordion-content{
+        margin: 0;
+		padding: 30px;
+		background-color: #fff;
+		border: 1px solid $first-main-color;
+		border-top: none;
+    }
+    .edgtf-title-holder {
+    	display: table;
+    	width: 100%;
+        cursor: pointer;
+        position: relative;
+        height: 45px;
+        line-height: 45px;
+        padding: 0;
+        margin: 15px 0 0;
+        box-sizing: border-box;
+		border: 1px solid $default-border-color;
+		background-color: #fff;
+        @include edgtfTransform(translateZ(0px));
+        @include edgtfTransition(background 0.15s ease-out, border-color 0.15s ease-out, color 0.15s ease-out);
+        
+        &:first-child{
+            margin: 0;
+        }
+
+        .edgtf-tab-title{
+        	position: relative;
+        	display: table-cell;
+        	vertical-align: middle;
+        	padding-left: 30px;
+        }
+        
+        .edgtf-tab-title,
+        .edgtf-tab-title-inner{
+            color: inherit;
+            line-height: inherit;
+        }
+        
+        .edgtf-accordion-mark {
+        	display: table-cell;
+        	vertical-align: middle;
+        	width: 1%;
+            line-height:inherit;
+            color: #000;
+            box-sizing: border-box;
+            @include edgtfTransition(background-color 0.15s ease-out, border-color 0.15s ease-out);
+        }
+        
+        .edgtf-accordion-mark-icon {
+            position: relative;
+            display: block;
+            width:100%;
+            height: 100%;
+            line-height:inherit;
+            text-align: center;
+            font-size: 18px;
+            padding: 22px;
+            box-sizing: border-box;
+            @include edgtfTransition(color 0.15s ease-out);
+        }
+        .edgtf-accordion-mark-icon span{
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            line-height:inherit;
+            @include edgtfTransition(opacity 0.15s ease-out);
+            margin-left: -1px;
+        }
+        .edgtf-accordion-mark-icon .icon_minus-06{
+            opacity: 0;
+        }
+        .edgtf-accordion-mark-icon .icon_plus{
+            opacity: 1;
+        }
+        
+		.edgtf-acc-gradient{
+			position: absolute;
+			top: -1px;
+			left: -1px;
+			width: calc(100% + 2px); //because of the border
+			height: calc(100% + 2px); //because of the border
+			opacity: 0;
+			@include edgtfBackgroundGradient();
+			@include edgtfTransition(opacity .15s ease-out);
+		}
+    }
+    .edgtf-title-holder.ui-state-active,
+    .edgtf-title-holder.ui-state-hover{
+        color: #fff;
+
+        .edgtf-accordion-mark{
+            color: #fff;
+        }
+
+        .edgtf-acc-gradient{
+        	opacity: 1;
+        }
+    }
+    .edgtf-title-holder.ui-state-active{
+        
+        .edgtf-accordion-mark-icon .icon_minus-06{
+             opacity: 1;
+        }
+        .edgtf-accordion-mark-icon .icon_plus{
+            opacity: 0;
+        }
+    }
+}

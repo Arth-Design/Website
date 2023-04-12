@@ -1,0 +1,69 @@
+/* ==========================================================================
+   Crossfade Slider shortcode start styles
+   ========================================================================== */
+
+.edgtf-crossfade-slider {
+
+	.edgtf-crossfade-slider-images {
+		visibility: hidden;
+		display: inline-block;
+		vertical-align: middle;
+		max-width: 100%;
+		background-color: #1d1d1d;
+		border:1px solid #9f9f9f;
+		.edgtf-crossfade-slide {
+			position: absolute;
+			top:0;
+			left:0;
+			height: 100%;
+			width:100%;
+			opacity:0;
+			@include edgtfTransform(scale(.8) translateZ(0));
+			@include edgtfTransition(all .25s);
+			img {
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.edgtf-crossfade-slide-table {
+				display: table;
+				height: 100%;
+				width: 100%;
+				table-layout: fixed;
+			}
+			.edgtf-crossfade-slide-cell {
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+			}
+			&.edgtf-crossfade-active {
+				@include edgtfTransform(scale(1) translateZ(0));
+				opacity:1;
+				@include edgtfTransition(all .35s .1s);
+			}
+			&.edgtf-relative {
+				position: relative;
+				height: auto;
+				width: auto;
+			}
+		}
+	}
+
+	.edgtf-crossfade-slider-text {
+		margin-top: 15px;
+		text-align: center;
+		.edgtf-crossfade-slider-title {
+			display: inline-block;
+			color:#fff;
+		}
+		.edgtf-crossfade-slider-subtitle {
+			display: inline-block;
+			margin-left: 10px;
+			color:	$first-main-color;
+		}
+	}
+
+}
+
+/* ==========================================================================
+   Crossfade Slider shortcode end styles
+   ========================================================================== */

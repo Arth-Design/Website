@@ -1,0 +1,510 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Portfolio and Projects\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-16 06:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.0; wp-5.4.2"
+
+#: includes/admin/metabox/wp-pap-slider-parameter.php:57
+#: includes/admin/metabox/wp-pap-slider-parameter.php:68
+#: includes/admin/metabox/wp-pap-slider-parameter.php:79
+#: includes/admin/metabox/wp-pap-slider-parameter.php:90
+#: includes/admin/metabox/wp-pap-slider-parameter.php:101
+#, php-format
+msgid ""
+" Upgrade to <a href=\"%s\" target=\"_blank\">Premium Version</a> to get this "
+"option."
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:31
+msgid "15+. In lite version only one design."
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:23
+msgid "2 (Grid, Filter). In lite version only 1 layout."
+msgstr ""
+
+#: includes/wp-pap-post-types.php:71
+msgid "Add New Category"
+msgstr ""
+
+#: includes/wp-pap-post-types.php:24
+msgid "Add New Projects"
+msgstr ""
+
+#: includes/wp-pap-post-types.php:23
+msgid "Add Projects"
+msgstr ""
+
+#: includes/wp-pap-post-types.php:66
+msgid "All Category"
+msgstr ""
+
+#: includes/admin/pap-how-it-work.php:57
+msgid "All Shortcodes"
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:87
+msgid "Arrange your desired slides with your desired order and display."
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-slider-parameter.php:31
+msgid "Arrow"
+msgstr ""
+
+#: includes/admin/class-wp-pap-admin.php:266
+msgid "Attachment Found."
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-slider-parameter.php:85
+msgid "Autoplay Interval "
+msgstr ""
+
+#: includes/admin/pap-how-it-work.php:88
+msgid "Boost Design"
+msgstr ""
+
+#: includes/admin/pap-how-it-work.php:87
+msgid "Boost design and best solution for your website."
+msgstr ""
+
+#: includes/wp-pap-post-types.php:63 includes/wp-pap-post-types.php:64
+msgid "Category"
+msgstr ""
+
+#: includes/admin/pap-how-it-work.php:68
+msgid "Check Documentation"
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-slider-parameter.php:57
+msgid "Check this box to enable slider autoplay."
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-slider-parameter.php:68
+msgid "Check this box to run slider continuously."
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-slider-parameter.php:114
+msgid "Could be \"slide\", \"fade\""
+msgstr ""
+
+#: includes/wp-pap-post-types.php:107
+msgid "Custom field deleted."
+msgstr ""
+
+#: includes/wp-pap-post-types.php:106
+msgid "Custom field updated."
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:28
+msgid "Designs "
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:39
+msgid "Display inline and popup style. in lite version only inline style"
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:47
+msgid "Display pagination."
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Display Portfolio OR Projects in a grid view. Also work with Gutenberg "
+"shortcode block."
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:103
+msgid ""
+"Do not display the protfolio & Do not display the protfolio for particular "
+"categories."
+msgstr ""
+
+#: includes/admin/pap-how-it-work.php:65
+msgid "Documentation"
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:84
+msgid "Drag & Drop Slide Order Change "
+msgstr ""
+
+#: includes/wp-pap-post-types.php:69
+msgid "Edit Category"
+msgstr ""
+
+#: includes/admin/settings/wp-pap-img-popup-data.php:19
+msgid "Edit Image"
+msgstr ""
+
+#: includes/wp-pap-post-types.php:25
+msgid "Edit Projects"
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-slider-parameter.php:107
+msgid "Effect"
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-slider-parameter.php:36
+msgid "Enable Arrows for slider"
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-slider-parameter.php:90
+msgid "Enter number of slider autoplay interval."
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-slider-parameter.php:101
+msgid "Enter number of slider speed."
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-slider-parameter.php:79
+msgid "Enter number of slides to show at a time."
+msgstr ""
+
+#: includes/admin/settings/premium.php:15
+msgid "Essential Plugin Bundle"
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:100
+msgid "Exclude Protfolio Slider Post and Exclude Some Categories "
+msgstr ""
+
+#: includes/admin/pap-how-it-work.php:60
+msgid "Gallery Slider"
+msgstr ""
+
+#: includes/admin/pap-how-it-work.php:44
+msgid "Getting Started with Portfolio/Projects"
+msgstr ""
+
+#: includes/admin/pap-how-it-work.php:140
+msgid "Go Premium"
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:95
+msgid ""
+"Gutenberg Block, Elementor, Bevear Builder, SiteOrigin, Divi, Visual "
+"Composer and Fusion Page Builder Support"
+msgstr ""
+
+#: includes/admin/pap-how-it-work.php:99
+msgid "Help to improve this plugin!"
+msgstr ""
+
+#: includes/admin/pap-how-it-work.php:14
+#: includes/admin/class-wp-pap-admin.php:72
+msgid "How It Works"
+msgstr ""
+
+#: includes/admin/pap-how-it-work.php:36
+msgid "How It Works - Display and shortcode"
+msgstr ""
+
+#: includes/admin/class-wp-pap-admin.php:72
+msgid "How it works, our plugins and offers"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.essentialplugin.com/"
+msgstr ""
+
+#. URI of the plugin
+msgid ""
+"https://www.essentialplugin.com/wordpress-plugin/portfolio-and-projects/"
+msgstr ""
+
+#: includes/wp-pap-post-types.php:115
+msgid "Image Gallery draft updated."
+msgstr ""
+
+#: includes/wp-pap-post-types.php:110
+msgid "Image Gallery published."
+msgstr ""
+
+#: includes/wp-pap-post-types.php:109
+#, php-format
+msgid "Image Gallery restored to revision from %s"
+msgstr ""
+
+#: includes/wp-pap-post-types.php:111
+msgid "Image Gallery saved."
+msgstr ""
+
+#: includes/wp-pap-post-types.php:113
+#, php-format
+msgid "Image Gallery scheduled for: <strong>%1$s</strong>."
+msgstr ""
+
+#: includes/wp-pap-post-types.php:112
+msgid "Image Gallery submitted."
+msgstr ""
+
+#: includes/wp-pap-post-types.php:105 includes/wp-pap-post-types.php:108
+msgid "Image Gallery updated."
+msgstr ""
+
+#: portfolio-and-projects.php:149
+msgid ""
+"It looks like you had PRO version <strong>(<em>Portfolio and Projects "
+"Pro</em>)</strong> of this plugin activated. To avoid conflicts the extra "
+"version has been deactivated and we recommend you delete it."
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:20
+msgid "Layouts "
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:60
+msgid "Link and Link Target "
+msgstr ""
+
+#: includes/wp-pap-post-types.php:114
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: includes/admin/class-wp-pap-admin.php:113
+msgid "More Premium - Settings"
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-slider-parameter.php:28
+msgid "Navigation & Pagination Settings"
+msgstr ""
+
+#: includes/admin/pap-how-it-work.php:79
+msgid "Need Support & Solutions?"
+msgstr ""
+
+#: includes/wp-pap-post-types.php:72
+msgid "New Category Name"
+msgstr ""
+
+#: includes/wp-pap-post-types.php:26
+msgid "New Project"
+msgstr ""
+
+#: includes/wp-pap-post-types.php:29
+msgid "No Portfolio/Projects"
+msgstr ""
+
+#: includes/wp-pap-post-types.php:30
+msgid "No Portfolio/Projects found in Trash"
+msgstr ""
+
+#: includes/admin/class-wp-pap-admin.php:194
+msgid "Number of Photos"
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:63
+msgid ""
+"Option to enable/disable portfolio item link and Open link in same window OR "
+"in new tab."
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:92
+msgid "Page Builder Support "
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-slider-parameter.php:41
+msgid "Pagination"
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:44
+msgid "Pagination "
+msgstr ""
+
+#: includes/wp-pap-post-types.php:67
+msgid "Parent Category"
+msgstr ""
+
+#: includes/wp-pap-post-types.php:68
+msgid "Parent Category:"
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:79
+msgid ""
+"Play with all shortcode parameters with preview panel. No documentation "
+"required."
+msgstr ""
+
+#: includes/admin/settings/wp-pap-img-popup.php:22
+msgid "Please Wait"
+msgstr ""
+
+#. Name of the plugin
+msgid "Portfolio and Projects"
+msgstr ""
+
+#: includes/admin/settings/premium.php:15
+msgid "Portfolio and Projects with "
+msgstr ""
+
+#: includes/wp-pap-post-types.php:73
+msgid "Portfolio Category"
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:36
+msgid "Portfolio Detail View Styles "
+msgstr ""
+
+#: includes/admin/class-wp-pap-admin.php:109
+msgid "Portfolio Gallery"
+msgstr ""
+
+#: includes/wp-pap-post-types.php:31
+msgid "Portfolio/Projects"
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:20
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:28
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:36
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:44
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:52
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:60
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:68
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:76
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:84
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:92
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:100
+#: includes/admin/metabox/wp-pap-slider-parameter.php:52
+#: includes/admin/metabox/wp-pap-slider-parameter.php:63
+#: includes/admin/metabox/wp-pap-slider-parameter.php:74
+#: includes/admin/metabox/wp-pap-slider-parameter.php:85
+#: includes/admin/metabox/wp-pap-slider-parameter.php:96
+msgid "PRO"
+msgstr ""
+
+#: includes/wp-pap-post-types.php:22
+msgid "Project"
+msgstr ""
+
+#: includes/wp-pap-post-types.php:21
+msgid "Projects"
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:52
+msgid "Query Offset "
+msgstr ""
+
+#: includes/wp-pap-post-types.php:65
+msgid "Search Category"
+msgstr ""
+
+#: includes/wp-pap-post-types.php:28
+msgid "Search Portfolio/Projects"
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:76
+msgid "Shortcode Generator "
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-slider-parameter.php:74
+msgid "Slide to Show "
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-slider-parameter.php:52
+msgid "Slider Autoplay "
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-slider-parameter.php:63
+msgid "Slider Loop "
+msgstr ""
+
+#: includes/admin/class-wp-pap-admin.php:111
+msgid "Slider Parameter"
+msgstr ""
+
+#: includes/admin/class-wp-pap-admin.php:250
+#: includes/admin/class-wp-pap-admin.php:286
+msgid "Sorry, Something happened wrong."
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-slider-parameter.php:96
+msgid "Speed "
+msgstr ""
+
+#: includes/admin/pap-how-it-work.php:48
+msgid ""
+"Step-1: This plugin create a Gallery mata box under your Portfolio/Projects "
+"tab in WordPress menu section"
+msgstr ""
+
+#: includes/admin/pap-how-it-work.php:49
+msgid ""
+"Step-2: Go to Profolio/Projects add new portfoilo add gallery images, "
+"project link and choose your slider setting"
+msgstr ""
+
+#: includes/admin/pap-how-it-work.php:50
+msgid ""
+"Step-3: Now, paste below shortcode in any post or page and your profolio "
+"listing is ready !!!"
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-slider-parameter.php:46
+msgid ""
+"String with CSS selector or HTML element of the container with pagination"
+msgstr ""
+
+#: portfolio-and-projects.php:148
+msgid "Thank you for activating Portfolio and Projects"
+msgstr ""
+
+#: includes/wp-pap-post-types.php:70
+msgid "Update Category"
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:14
+#, php-format
+msgid ""
+"Upgrade to <a href=\"%s\" target=\"_blank\">Pro Version</a> with Essential "
+"Plugin Bundle to boost your website design.."
+msgstr ""
+
+#: includes/admin/class-wp-pap-admin.php:75
+msgid "Upgrade to PRO"
+msgstr ""
+
+#: includes/admin/class-wp-pap-admin.php:75
+msgid "Upgrade to PRO - Portfolio and Projects"
+msgstr ""
+
+#: includes/admin/pap-how-it-work.php:115
+msgid "Upgrate to Pro"
+msgstr ""
+
+#: includes/admin/pap-how-it-work.php:141
+msgid "View PRO Demo "
+msgstr ""
+
+#: includes/wp-pap-post-types.php:27
+msgid "View Projects"
+msgstr ""
+
+#. Author of the plugin
+msgid "WP OnlineSupport, Essential Plugin"
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:68
+msgid "WP Templating Features "
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:71
+msgid "You can modify plugin html/designs in your current theme."
+msgstr ""
+
+#: includes/admin/metabox/wp-pap-post-setting-metabox-pro.php:55
+msgid "You can set query offset."
+msgstr ""
+
+#: includes/admin/class-wp-pap-admin.php:311
+msgid "Your changes saved successfully."
+msgstr ""

@@ -1,0 +1,92 @@
+/* ==========================================================================
+   Instagram start styles
+   ========================================================================== */
+.edgtf-instagram-feed {
+    margin-left: -10px;
+    margin-right: -10px;
+    
+    li{
+        float: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0 !important;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        
+        a {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            &:before {
+                content:'';
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(0,0,0,.7);
+                z-index: 20;
+                opacity:0;
+                @include edgtfTransition(opacity .3s);
+            }
+            &:after {
+                content: "\ea92";
+                position: absolute;
+                top:50%;
+                left:50%;
+                @include edgtfTransform(translate(-50%,-50%) scale(.8));
+                font-family: 'icomoon' !important;
+                color:#fff;
+                font-size: 16px;
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                vertical-align: middle;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                z-index: 30;
+                opacity:0;
+                @include edgtfTransition(all .4s);
+                -webkit-backface-visibility:hidden;
+            }
+            &:hover {
+                &:before {
+                    opacity:1;
+                    @include edgtfTransform(opacity .5s);
+                }
+                &:after {
+                    opacity:1;
+                    @include edgtfTransform(translate(-50%,-50%) scale(1));
+                }
+            }
+        }
+
+        img{
+            display: block;
+        }
+    }
+}
+
+.edgtf-instagram-feed.edgtf-col-9 li {
+    width: 11.11111111111111%;
+}
+
+.edgtf-instagram-feed.edgtf-col-6 li {
+    width: 16.66666666666667%;
+}
+
+.edgtf-instagram-feed.edgtf-col-4 li {
+    width: 25%;
+}
+
+.edgtf-instagram-feed.edgtf-col-3 li {
+    width: 33.33%;
+}
+
+.edgtf-instagram-feed.edgtf-col-2 li {
+    width: 50%;
+}
+/* ==========================================================================
+   Instagram end styles
+   ========================================================================== */

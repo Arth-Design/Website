@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Shop masonry responsive start style
+   ========================================================================== */
+.page-template-default {
+  .edgtf-shop-masonry {
+
+    .edgtf-shop-list-masonry-grid-sizer,
+    .edgtf-shop-product {
+      @include ipad-landscape {
+        width: 50%;
+      }
+      @include phone-landscape {
+        width: 100%;
+      }
+    }
+
+    .edgtf-large-width-masonry-item,
+    .edgtf-large-width-height-masonry-item {
+      @include ipad-landscape {
+        width: 100%;
+      }
+      @include phone-landscape {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.page-template-full-width {
+  .edgtf-shop-masonry {
+
+    .edgtf-shop-list-masonry-grid-sizer,
+    .edgtf-shop-product {
+      @include ipad-portrait {
+        width: 50%;
+      }
+      @include phone-landscape {
+        width: 50%;
+      }
+      @include phone-portrait {
+        width: 100%;
+      }
+    }
+
+    .edgtf-large-width-masonry-item,
+    .edgtf-large-width-height-masonry-item {
+      @include ipad-portrait {
+        width: 100%;
+      }
+      @include phone-landscape {
+        width: 100%;
+      }
+      @include phone-portrait {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.edgtf-shop-masonry {
+  .edgtf-shop-list-masonry-grid-sizer,
+  .edgtf-shop-product{
+    @include phone-landscape{
+      .edgtf-onsale,
+      .edgtf-out-of-stock-button {
+        width: 79px;
+        height: 79px;
+        font-size: 12px;
+      }
+    }
+    @include phone-portrait{
+      .edgtf-onsale,
+      .edgtf-out-of-stock-button {
+        width: 59px;
+        height: 59px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+   End of Shop masonry responsive style
+   ========================================================================== */

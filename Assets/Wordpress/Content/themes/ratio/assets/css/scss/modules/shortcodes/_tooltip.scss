@@ -1,0 +1,115 @@
+/* ==========================================================================
+#Tooltip Style - begin
+========================================================================== */
+
+.edgtf-tooltip-outer {
+    display: inline-block;
+}
+
+.edgtf-tooltip-icon-outer {
+    position: absolute;
+    top: 50%;
+    width: 25px;
+    @include edgtfTransform(translateY(-50%));
+}
+
+.edgtf-tooltip-icon {
+    display: inline-block;
+    height: 25px; 
+    width: 25px; 
+    border-radius: 50%; 
+    vertical-align: top;
+    background-color: $first-main-color;
+    color:#fff;
+    text-align: center;
+    cursor: pointer;
+    span {
+        font-size: 21px;
+        font-weight: 500;
+    }
+
+    @include keyframes(tooltipBlink) {
+        0%,100% {
+            opacity:1;
+        }
+        60% {
+            opacity:0;
+        }
+    }
+
+    &.edgtf-animating {
+        opacity:1;
+        @include animation(tooltipBlink, 1s, infinite, cubic-bezier(0.77, 0, 0.175, 1), .0s);
+    }
+}
+
+.edgtf-tooltip {
+    position: relative;
+    left:37px;
+    display:inline-block;
+    background-color: #303030;
+    border:1px solid #515151;
+    border-radius:10px;
+    box-sizing:border-box;
+    padding: 12px 35px 13px 13px;
+    cursor:pointer;
+    opacity:0;
+    @include edgtfTransform(scale(0));
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition: -webkit-transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.075) .1s, opacity .2s ease .1s;
+    transition: transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.075) .1s, opacity .2s ease .1s;
+
+    &.edgtf-appeared {
+        opacity:1;
+        @include edgtfTransform(scale(1));
+    }
+
+    .edgtf-tooltip-title {
+        color:#fff;
+        line-height:22px;
+    }
+    .edgtf-tooltip-subtitle {
+        font-size:11px;
+        line-height:11px;
+        margin-bottom:0;
+        text-align: left;
+    }
+
+    &:before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        @include edgtfTransform(translateY(-50%) rotate(45deg));
+        left: -5px;
+        top: 50%;
+        width: 7px; 
+        height: 7px; 
+        background-color: inherit;
+        border-left:1px solid #515151; 
+        border-bottom:1px solid #515151; 
+    }
+
+    &:after {
+        position:absolute;
+        top:5px;
+        right:5px;
+        font-size:13px;
+        font-weight:800; 
+        content: "\4d";
+        font-family: 'ElegantIcons';
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        @include edgtfTransition(color .15s ease-out);
+    }
+
+}
+
+/* ==========================================================================
+#Tooltip Style - end
+========================================================================== */

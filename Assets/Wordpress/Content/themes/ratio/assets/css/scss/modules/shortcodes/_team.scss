@@ -1,0 +1,169 @@
+/* ==========================================================================
+# Team style - begin
+========================================================================== */
+
+.edgtf-team {
+
+	.edgtf-team-inner {
+		overflow:hidden;
+		width: 100%;
+	}
+
+	.edgtf-team-image {
+		position:relative;
+		overflow: hidden;
+		@include edgtfFilter(grayscale(100%));
+		-ms-transition: -ms-filter .2s ease-out;
+		transition: filter .2s ease-out;
+		-webkit-transition: -webkit-filter .2s ease-out;
+
+		&:hover{
+			@include edgtfFilter(grayscale(0));
+		}
+
+		img {
+			width: 100%;
+			vertical-align: middle;
+		}
+
+	}
+
+	.edgtf-team-description {
+		display: table;
+		width: 100%;
+		height: 100%;
+	}
+
+	.edgtf-team-text {
+		padding: 12px 0 0 0;
+		p {
+			margin: 0;
+		}
+	}
+
+	.edgtf-team-social-wrapp {
+		margin: 16px 0 0 0;
+
+		.edgtf-icon-shortcode{
+			padding: 0 10px;
+		}
+
+		a{
+			color: #858585;
+		}
+
+		a:hover{
+			color: $first-main-color;
+		}
+	}
+
+	.edgtf-team-social {
+		display: table;
+		width: 100%;
+		height: 100%;
+
+		.edgt_icon_ion_icon:before,
+		.edgt_icon_linea_icon:before {
+			line-height: inherit;
+		}
+
+	}
+
+	.edgtf-team-social-inner {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		position: relative;
+	}
+
+}
+
+.touch .edgtf-team .edgtf-team-social-holder {
+	cursor: pointer;
+}
+
+/* Team type main info below image - begin
+========================================================================== */
+
+.edgtf-team.main-info-below-image {
+	-webkit-transform: translateZ(0);
+	text-align: center;
+
+	.edgtf-team-info {
+		padding: 32px 10px 0;
+
+		.edgtf-team-position {
+			color: $first-main-color;
+		}
+	}
+
+	.edgtf-team-image {
+		overflow: visible;
+	}
+
+}
+
+/* Team type main info below image - end
+========================================================================== */
+
+/* Team type main info on hover - begin
+========================================================================== */
+
+.edgtf-team.main-info-on-hover {
+	overflow:hidden;
+
+	.edgtf-team-social-holder {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		left:0;
+		top: 0;
+		opacity: 0;
+		filter: alpha(opacity=0);
+		display:table-cell;
+		vertical-align: middle;
+		background-color: #333333;
+		@include edgtfTransition(opacity 0.15s ease-out, background-color 0.15s ease-out);
+		@include edgtfTransform(translateZ(0px));
+
+		.social_icon {
+			font-size: inherit;
+			line-height: inherit;
+		}
+
+		.social_icon {
+			display: block;
+
+			&:before{
+				display: block;
+			}
+
+		}
+
+	}
+
+	&:hover {
+
+		.edgtf-team-social-holder{
+			opacity: 1;
+			filter: alpha(opacity=100);
+		}
+
+	}
+
+	.edgtf-team-name,
+	.edgtf-team-position {
+		color: #fff;
+	}
+	.edgtf-team-position {
+		margin: 2px 0 0 0;
+	}
+
+}
+
+
+/* Team type main info on hover - end
+========================================================================== */
+/* ==========================================================================
+# Team style - end
+========================================================================== */

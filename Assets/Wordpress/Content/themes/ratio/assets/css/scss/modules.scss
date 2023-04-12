@@ -1,0 +1,260 @@
+//global partials
+@import 'variables';
+@import 'mixins';
+
+/*------------------------------------------------------------------
+ * This is main css file for theme. It is broken into following sections:
+ * 1.  Global styles and reset
+ * 2.  Header Styles
+ * 3.  Footer styles
+ * 4.  Title area styles
+ * 5.  Side area styles
+ * 6.  Search functionality styles
+ * 7.  Portfolio styles
+ * 8.  Shortcodes styles
+ * 9.  Widgets styles
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+ * Color codes
+
+ * Accent color: #{$first-main-color} - #d6ab60
+ * Background: #{$default-background-color} - #fff
+ * Content: #{$default-text-color} - #757575
+ * Header h1: #313131
+ * Header h2: #313131
+ * Header h3: #313131
+ * Header h4: #313131
+ * Header h5: #313131
+ * Header h6: #313131
+ * Header Background: #fff
+ * Footer Top Background: #1d1d1d
+ * Footer Bottom Background: #000000
+
+ * a (standard): #{$first-main-color}
+ * a (hover): #{$first-main-color}
+ */
+
+/* ==========================================================================
+   1. Global styles and reset
+   ========================================================================== */
+@import 'global';
+@import 'animations';
+@import 'spinners';
+@import 'common';
+
+/* ==========================================================================
+   2. Header styles
+   ========================================================================== */
+@import 'modules/header/header';
+@import 'modules/fullscreenmenu/fullscreenmenu';
+/* ==========================================================================
+   3. Footer styles
+   ========================================================================== */
+@import 'modules/footer/footer';
+
+/* ==========================================================================
+   4. Title area styles
+   ========================================================================== */
+@import 'modules/title/title';
+
+/* ==========================================================================
+   5. Side area styles
+   ========================================================================== */
+@import 'modules/sidearea/sidearea';
+
+
+/* ==========================================================================
+   6. Search functionality styles
+   ========================================================================== */
+@import 'modules/search/search';
+
+/* ==========================================================================
+   7. Portfolio styles
+   ========================================================================== */
+@import 'modules/portfolio/portfolio';
+
+/* ==========================================================================
+   8. Shortcodes styles
+   ========================================================================== */
+
+/* Elements holders styles
+   ========================================================================== */
+@import 'modules/shortcodes/elements-holder';
+
+/* Team styles
+   ========================================================================== */
+@import 'modules/shortcodes/team';
+
+/* Call To Action styles
+   ========================================================================== */
+@import 'modules/shortcodes/calltoaction';
+
+/* Counter styles
+   ========================================================================== */
+@import 'modules/shortcodes/counter';
+
+/* Icon styles
+   ========================================================================== */
+@import 'modules/shortcodes/icon';
+
+/* Countdown styles
+   ========================================================================== */
+@import 'modules/shortcodes/countdown';
+
+/* Message styles
+   ========================================================================== */
+@import 'modules/shortcodes/message';
+
+/* Ordered List styles
+   ========================================================================== */
+@import 'modules/shortcodes/ordered-list';
+
+/* Unordered List styles
+   ========================================================================== */
+@import 'modules/shortcodes/unordered-list';
+
+/* Icon List Item styles
+   ========================================================================== */
+@import 'modules/shortcodes/icon-list-item';
+
+/* Progress Bar styles
+   ========================================================================== */
+@import 'modules/shortcodes/progress-bar';
+
+/* Testimonials styles
+   ========================================================================== */
+@import 'modules/shortcodes/testimonials';
+
+/* Pricing Tables styles
+   ========================================================================== */
+@import 'modules/shortcodes/pricing-tables';
+
+/* Pie Chart Basic styles
+   ========================================================================== */
+@import 'modules/shortcodes/piechartbasic';
+
+/* Pie Chart With Icon styles
+   ========================================================================== */
+@import 'modules/shortcodes/piechartwithicon';
+
+/* Pie Chart Doughnut styles
+   ========================================================================== */
+@import 'modules/shortcodes/piechartdoughnut';
+
+/* Pie Chart Pie styles
+   ========================================================================== */
+@import 'modules/shortcodes/piechartpie';
+
+/* Pie Chart Pie styles
+   ========================================================================== */
+@import 'modules/shortcodes/process';
+
+/* Tabs styles
+   ========================================================================== */
+@import 'modules/shortcodes/tabs';
+
+/* Accordions styles
+   ========================================================================== */
+@import 'modules/shortcodes/accordions';
+
+/* Google Map styles
+   ========================================================================== */
+@import 'modules/shortcodes/_google-map';
+
+/* Separator styles
+   ========================================================================== */
+@import 'modules/shortcodes/separator';
+
+/* Blog List styles
+   ========================================================================== */
+@import 'modules/shortcodes/blog-list';
+
+/* Blog Slider styles
+   ========================================================================== */
+@import 'modules/shortcodes/blog-slider';
+
+/* Button styles
+   ========================================================================== */
+@import 'modules/shortcodes/button';
+
+/* Carousel styles
+   ========================================================================== */
+@import 'modules/shortcodes/carousels';
+
+/* Blockquote styles
+   ========================================================================== */
+@import 'modules/shortcodes/blockquote';
+
+/* Image Gallery styles
+   ========================================================================== */
+@import 'modules/shortcodes/imagegallery';
+
+/* Video Button styles
+   ========================================================================== */
+@import 'modules/shortcodes/videobutton';
+
+/* Dropcaps styles
+   ========================================================================== */
+@import 'modules/shortcodes/dropcaps';
+
+/* Portfolio styles
+   ========================================================================== */
+@import 'modules/shortcodes/portfolio';
+
+/* Icon With Text styles
+   ========================================================================== */
+@import 'modules/shortcodes/icon-with-text';
+
+/* Social Share styles
+   ========================================================================== */
+@import 'modules/shortcodes/socialshare';
+
+/* Slider styles
+   ========================================================================== */
+@import 'modules/shortcodes/slider';
+
+/* Vertical Split Slider styles
+   ========================================================================== */
+@import 'modules/shortcodes/vertical-split-slider';
+
+/* Shop Masonry styles
+   ========================================================================== */
+@import 'modules/shortcodes/shop-masonry';
+
+/* Custom Font styles
+   ========================================================================== */
+@import 'modules/shortcodes/custom-font';
+
+/* Contact Form 7 styles
+   ========================================================================== */
+@import 'modules/shortcodes/contact-form-7';
+
+/* Numbered Title styles
+   ========================================================================== */
+@import 'modules/shortcodes/numbered-title';
+
+/* Section Subtitle styles
+   ========================================================================== */
+@import 'modules/shortcodes/section-subtitle';
+
+/* Advanced Carousel styles
+   ========================================================================== */
+@import 'modules/shortcodes/advanced-carousel';
+
+/* Crossfade Slider styles
+   ========================================================================== */
+@import 'modules/shortcodes/crossfade-slider';
+
+/* Tooltip styles
+   ========================================================================== */
+@import 'modules/shortcodes/tooltip';
+
+/* ==========================================================================
+   9. Widgets styles
+   ========================================================================== */
+@import 'modules/widgets/widgets';
+@import 'modules/widgets/instagram';
+@import 'modules/widgets/twitter';
+@import 'modules/widgets/social-icon';

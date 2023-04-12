@@ -1,0 +1,117 @@
+.edgtf-icon-shortcode {
+    $transition-duration: 0.15s;
+
+    display: inline-block;
+
+	> i {
+		cursor: default;
+	}
+
+    &.circle,
+    &.square {
+    	position: relative;
+        width: 2em;
+        height: 2em;
+        line-height: 2em;
+        text-align: center;
+
+        a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .edgtf-icon-element {
+            color: #fff;
+            line-height: inherit;
+            -webkit-backface-visibility: hidden;
+
+            &.edgtf-icon-linea-icon{
+            	vertical-align: middle;
+
+            	&:before{
+            		line-height: inherit;
+            	}
+            }
+        }
+
+        .edgtf-icon-background-holder,
+        .edgtf-icon-background-hover-holder{
+        	position: absolute;
+        	top: 0;
+        	left: 0;
+        	width: 100%;
+        	height: 100%;
+        	box-sizing: border-box;
+        }
+
+        .edgtf-icon-background-holder{
+        	background-color: #252525;
+        	opacity: 1;
+        	@include edgtfTransition(opacity $transition-duration ease-in-out);
+        	z-index: -1;
+        }
+
+        .edgtf-icon-background-hover-holder{
+        	@include edgtfBackgroundGradient();
+        	z-index: -5;
+        	opacity: 0;
+        	@include edgtfTransition(opacity 0s ease-in-out $transition-duration);
+        }
+
+        &:hover{
+        	.edgtf-icon-background-holder{
+        		opacity: 0;
+        	}
+
+        	.edgtf-icon-background-hover-holder{
+        		opacity: 1;
+        		@include edgtfTransition(opacity 0s ease-in-out);
+        	}
+        }
+    }
+
+    &.circle,
+    &.circle .edgtf-icon-background-holder,
+    &.circle .edgtf-icon-background-hover-holder{
+        @include edgtfBorderRadius(50%);
+    }
+
+    &.normal{
+    	.edgtf-icon-linea-icon:before{
+    		vertical-align: middle;
+    	}
+    }
+}
+
+.edgtf-icon-animation-holder {
+    @include edgtfTransform(scale(0));
+    @include edgtfTransition(transform 0.15s ease-in-out);
+    display: inline-block;
+
+    &.edgtf-icon-animation-show {
+        @include edgtfTransform(scale(1));
+    }
+}
+
+.edgtf-icon-tiny {
+    font-size: 1.33333333em;
+    line-height: .75em;
+    vertical-align: -15%;
+}
+
+.edgtf-icon-small {
+    font-size: 2em;
+}
+
+.edgtf-icon-medium {
+    font-size: 3em;
+}
+
+.edgtf-icon-large {
+    font-size: 4em;;
+}
+
+.edgtf-icon-huge {
+    font-size: 5em;
+}

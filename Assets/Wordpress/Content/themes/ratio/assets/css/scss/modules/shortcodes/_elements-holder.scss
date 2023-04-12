@@ -1,0 +1,180 @@
+/* ==========================================================================
+   Elements Holder start style
+   ========================================================================== */
+
+.edgtf-elements-holder {
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+
+	&.edgtf-two-columns {
+
+		.edgtf-elements-holder-item {
+			width: 50%;
+		}
+	}
+
+	&.edgtf-two-columns {
+
+		.edgtf-elements-holder-item {
+			width: 50%;
+		}
+	}
+
+	&.edgtf-three-columns {
+
+		.edgtf-elements-holder-item {
+			width: 33%;
+		}
+	}
+
+	&.edgtf-four-columns {
+
+		.edgtf-elements-holder-item {
+			width: 25%;
+		}
+	}
+
+	&.edgtf-five-columns {
+
+		.edgtf-elements-holder-item {
+			width: 20%;
+		}
+	}
+
+	&.edgtf-six-columns {
+
+		.edgtf-elements-holder-item {
+			width: 16%;
+		}
+	}
+
+	.edgtf-elements-holder-item {
+
+		display: table-cell;
+		vertical-align: middle;
+		height: 100%;
+		position: relative;
+
+		.edgtf-elements-holder-item-background {
+			position: absolute;
+			top:0;
+			left:0;
+			height: 100%;
+			width: 100%;
+			background-size:cover;
+			background-repeat: no-repeat;
+		}
+
+		&.edgtf-vertical-alignment-top {
+			vertical-align: top;
+		}
+
+		&.edgtf-vertical-alignment-bottom {
+			vertical-align: bottom;
+		}
+
+		&.edgtf-horizontal-alignment-center {
+			text-align: center;
+		}
+
+		&.edgtf-horizontal-alignment-right {
+			text-align: right;
+		}
+
+		&.edgtf-inside-border {
+
+			position: relative;
+			padding: 11px;
+			@include edgtfBoxSizing(border-box);
+
+			&:after {
+				content: '';
+				position: absolute;
+				z-index: 1;
+				top: 11px;
+				bottom: 11px;
+				left: 11px;
+				right: 11px;
+				display: block;
+				border-color: inherit;
+				border-style: solid;
+				border-width: 1px;
+			}
+
+		}
+
+		.edgtf-elements-holder-item-inner {
+			width: 100%;
+		}
+
+		.edgtf-elements-item-link {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top:0;
+			left:0;
+		}
+
+		&.edgtf-animate-image {
+			overflow: hidden;
+			.edgtf-elements-holder-item-background {
+				@include edgtfTransition(all .5s ease-in-out);
+			}
+			&:hover {
+				.edgtf-elements-holder-item-background { 
+					@include edgtfTransition(all 2.5s ease);
+					@include edgtfTransform(scale(1.1));
+				}
+			}
+		}
+
+		&.edgtf-animate-border {
+			&:after {
+			   @include edgtfTransition(all .2s);
+			}
+
+			&:hover {
+				&:after {
+				    top: 22px;
+				    left: 22px;
+				    right: 22px;
+				    bottom: 22px;
+				    @include edgtfTransition(all .25s cubic-bezier(0.42, 0.09, 0.25, 0.91));
+				}
+			}
+
+		}
+	}
+
+	&.edgtf-elements-items-float {
+
+		&.edgtf-three-columns {
+
+			.edgtf-elements-holder-item {
+				width: 33.33333333333333%;
+			}
+		}
+
+		&.edgtf-six-columns {
+
+			.edgtf-elements-holder-item {
+				width: 16.66666666666667%;
+			}
+		}
+
+		.edgtf-elements-holder-item {
+			float:left;
+		}
+	}
+
+	.edgtf-elements-holder-item-content{
+		position: relative;
+		z-index: 10;
+		padding: 0 20px;
+	}
+
+}
+/* ==========================================================================
+   End of Elements Holder style
+   ========================================================================== */

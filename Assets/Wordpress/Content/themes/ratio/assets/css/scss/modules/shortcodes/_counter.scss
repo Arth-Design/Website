@@ -1,0 +1,50 @@
+/* ==========================================================================
+# Counter style - begin
+========================================================================== */
+
+.edgtf-counter-holder {
+	display: block;
+	opacity: 0;
+	@include edgtfTransition(opacity 0.3s ease-in);
+	padding: 20px 0;
+
+	.edgtf-counter {
+		font-size: 62px;
+		line-height: 1em;
+		font-weight: 200;
+		color: $second-text-color;
+		overflow: hidden;
+		display: inline-block !important;
+		height: 1em;
+		vertical-align: middle;
+	}
+	.edgtf-counter-title {
+		margin-top: 5px;
+		color: $first-main-color;
+	}
+	.edgtf-counter-text {
+		margin-top: 5px;
+	}
+
+}
+
+.edgtf-counter-holder-show {
+	opacity: 1;
+}
+
+.edgtf-counter-holder.left {
+	text-align: left;
+}
+
+.edgtf-counter-holder.right {
+	text-align: right;
+}
+
+.edgtf-counter-holder.center {
+	text-align: center;
+	padding: 20px 40px;
+}
+
+/* ==========================================================================
+# Counter style - end
+========================================================================== */

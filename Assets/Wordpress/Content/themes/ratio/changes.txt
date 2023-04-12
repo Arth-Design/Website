@@ -1,0 +1,131 @@
+2.5
+- Updated Edge Instagram Feed plugin to 2.0.1
+- Updated WPBakery page builder to 6.4.1
+- Fixed Instagram feed for business accounts
+
+2.4
+- Updated Edge Instagram Feed plugin to 2.0
+- Updated WPBakery page builder to 6.4.0
+- Updated Revolution Slider plugin to 6.2.23
+
+2.3
+- Added WordPress 5.5 compatibility
+- Added WooCommerce 4.4.1 compatibility
+- Updated Edge Core to 1.3.1
+- Updated WPBakery page builder to 6.3.0
+- Updated Revolution Slider plugin to 6.2.22
+- Updated language files
+- Fixed "Load More" functionality with Blog Standard page template
+
+2.2
+- Added Ratio Dashboard
+- Added WooCommerce 3.8.1 compatibility
+- Updated Edge Core to 1.3
+- Updated Edge Instagram Feed plugin to 1.0.2
+- Updated WPBakery Page Builder to 6.1
+- Updated Revolution Slider to 6.1.5
+- Updated Ratio Child theme to 1.1.1
+- Fixed Smooth Scroll behavior
+- Fixed Fullscreen Menu scroll behavior
+- Fixed Add to Cart button behavior on variable products
+- Improved Welcome Page
+- Improved Import
+- Changed Edge Options Position
+- Removed unused file instagram-redirect.php from Edge Instagram Widget plugin
+
+2.1
+- Added WooCommerce 3.7.0 compatibility
+- Updated WPBakery Page Builder to 6.0.5
+- Updated Revolution Slider to 6.1.1
+- Updated Edge Core plugin to 1.2.2
+- Fixed add to cart functionality on product single pages
+- Fixed button on WPBakery Hover Box element
+
+2.0.2
+- Improved footer area visibility
+- Fixed child theme error
+
+2.0.1
+- Updated Edge Core plugin to 1.2.1
+- Improved framework functions
+- Fixed minor bugs when core plugin is not installed
+
+2.0
+- Added WordPress 5.2.x compatibility
+- Added WooCommerce 3.6.3 compatibility
+- Updated Ratio Child theme to 1.1
+- Updated Edge Core plugin to 1.2
+- Updated Edge Instagram Feed plugin to 1.0.1
+- Updated Revolution Slider to 5.4.8.3
+- Updated WPBakery Page Builder to 6.0.2
+- Updated ratio.pot and edge-cpt.pot languages files
+- Improved theme templates, modules and functions
+- Improved import functionality
+- Fixed bugs
+
+1.8
+- Added compatibility with WordPress 5 and Gutenberg plugin
+- Added WooCommerce 3.5.2 compatibility
+- Added checkbox field on comment form (saving credentials) so form could be GDPR compliant
+- Updated Visual Composer to 5.6
+- Updated Revolution Slider to 5.4.8.1
+- Fixed deprecated add_to_cart_fragments function
+
+1.7
+- Added WooCommerce 3.3.5 compatibility
+- Added compatibility with PHP 7.2
+- Updated Visual Composer to 5.4.7
+- Updated Revolution Slider to 5.4.7.3
+- Update Envato Market to 2.0.0
+
+1.6
+- Added WooCommerce 3.2.6 compatibility
+- Added Envato Market plugin as required
+- Added recommended plugins (WooCommerce and Contact Form 7)
+- Updated WPBakery Page Builder to 5.4.5
+- Updated Revolution Slider to 5.4.6.4
+- Updated Edge Core plugin to 1.1.2
+- Fixed potential security issue when saving theme options
+- Fixed style function for PHP 7.1
+- Improved menu import for PHP 7.1
+
+1.5
+- Added Woocommerce 3.0.7 compatibility
+- Updated Visual Composer to 5.1.1
+- Updated Revolution Slider to 5.4.1
+- Fixed and improved content responsiveness within left menu layout
+- Fixed the issue with standard pagination on blog masonry template
+
+1.4
+- Added Woocommerce 2.6.11 compatibility
+- Updated Revolution Slider to 5.3.1.5
+- Updated Font Awesome icon pack to 4.7.0
+- Updated Edge Core plugin to 1.1.1 version
+
+1.3
+- Added Woocommerce 2.6.8 compatibility
+- Updated Visual Composer to 5.0.1
+- Updated Revolution Slider to 5.3.0.2
+- Updated Edge CPT plugin to 1.1
+- Fixed dynamic style script loading
+
+1.2
+- Added Woocommerce 2.6.6 compatibility
+- Added Google Maps API key options
+- Updated Visual Composer to 4.12.1
+- Updated Revolution Slider to 5.3
+- Updated Font Awesome icon pack to 4.6.3
+- Fixed Edge Elements Holder linking issue
+- Fixed showing tags on single portfolio item
+- Fixed closing Edge Ordered List shortcode
+
+1.1.1
+- Updated Woocommrece template files for 2.6.4 compatibility
+- Updated Revolution Slider to 5.2.6
+- Updated MixitUp script to latest version
+
+1.1
+- Added Woocommerce 2.6.1 compatibility
+- Updated Visual Composer to 4.11.2
+- Updated Revolution Slider to 5.2.5.4
+- Fixed facebook and twitter social share functionality

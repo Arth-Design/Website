@@ -1,0 +1,68 @@
+/* ==========================================================================
+# Portfolio Single Small Images - begin
+========================================================================== */
+
+.big-masonry {
+	$gutter:30px;
+	.edgtf-portfolio-media{
+		margin:(-$gutter / 2) (-$gutter / 2) 0;
+	}
+	.edgtf-single-masonry-grid-sizer{
+		width:25%;
+	}
+	.edgtf-default-masonry-item,
+	.edgtf-large-height-masonry-item{
+		width:25%;
+		@include edgtfBoxSizing(border-box);
+		padding:$gutter / 2;
+	}
+	.edgtf-large-width-height-masonry-item,
+	.edgtf-large-width-masonry-item{
+		width:50%;
+		@include edgtfBoxSizing(border-box);
+		padding:$gutter / 2;
+	}
+
+	.edgtf-portfolio-single-media {
+		a,
+		img {
+			box-sizing: border-box;
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+	}
+
+	.edgtf-single-masonry-grid-gutter{
+		width:$gutter;
+	}
+	
+	.edgtf-column1{
+		border-right: 1px solid $first-main-color;
+		box-sizing: border-box;
+	}
+
+	.edgtf-big-masonry-holder {
+		margin-bottom: 42px;
+	}
+
+	.edgtf-portfolio-info-holder{
+		margin-top: 9px;
+	}
+
+	&.edgtf-portfolio-single-holder{
+
+		.edgtf-portfolio-title{
+			margin-top: 9px;
+		}
+
+		.edgtf-portfolio-content{
+			margin-bottom: 10px;
+		}
+	}
+}
+
+/* ==========================================================================
+# Portfolio Single Small Images - end
+========================================================================== */

@@ -1,0 +1,68 @@
+/* ==========================================================================
+   Contact Form 7 shortcode start styles
+   ========================================================================== */
+div.wpcf7 img.ajax-loader {
+	display: none;
+}
+
+.edgtf-two-columns-form {
+	display: table;
+	width: 100%;
+
+	.edgtf-column-inner {
+		vertical-align: middle;
+		display: table-cell;
+
+		&:first-child {
+			padding-right: 9px;
+		}
+
+		&:last-child {
+			width: 1%;
+			text-align: left;
+			padding-left: 9px;
+		}
+	}
+
+	&.edgtf-no-space{
+		.edgtf-column-inner{
+			padding: 0;
+			vertical-align: top;
+		}
+	}
+}
+
+.wpcf7-form .edgtf-two-columns-50-50{
+	.edgtf-column .edgtf-column-inner{
+		padding: 0 8px;
+	}
+	> .edgtf-two-columns-50-50-inner{
+		margin: 0 -8px;
+	}
+}
+
+input.wpcf7-form-control.wpcf7-submit{
+	display: inline-block;
+	width: auto;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 20px;
+	font-size: 12px;
+	font-family: inherit;
+	color: #fff;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border: none;
+	margin: 0;
+	@include edgtfBackgroundGradient();
+	@include edgtfTransition(all 0.15s ease-out);
+	cursor: pointer;
+
+	&:hover{
+		color: #000;
+	}
+}
+
+/* ==========================================================================
+   Contact Form 7 shortcode end styles
+   ========================================================================== */

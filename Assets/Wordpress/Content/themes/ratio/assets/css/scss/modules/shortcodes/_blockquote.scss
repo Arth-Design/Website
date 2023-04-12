@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Blockquote shortcode start styles
+   ========================================================================== */
+blockquote{
+	position: relative;
+	display: table;
+
+	.edgtf-icon-quotations-holder {
+		display: table-cell;
+		width: 1%;
+		padding: 0 40px 0 20px;
+		font-size: 45px;
+		line-height: 1em;
+		font-weight: 400;
+		color: $first-main-color;
+		vertical-align: middle;
+	}
+
+	.edgtf-blockquote-text {
+
+		display: table-cell;
+		vertical-align: middle;
+		font-size: 18px;
+		line-height: 33px;
+		font-weight: 300;
+		color: $second-text-color;
+	}  
+    
+}
+
+/* ==========================================================================
+   Blockquote shortcode end styles
+   ========================================================================== */

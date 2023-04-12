@@ -1,0 +1,322 @@
+/*@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700";*/
+
+.mt100 {
+    margin-top: 40px;
+}
+
+/* .image-holder{ */
+    /* height: 200px; */
+/* } */
+
+
+/*Body of the Panel when it expands*/
+.panel .panel-body {
+    position: relative;
+    padding: 0 !important;
+    overflow: hidden;
+    height: auto;
+}
+
+/*Image size and transition*/
+.panel .panel-body a img {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+/*Transform scale effect when you hover over*/
+.panel .panel-body a.zoom:hover img {
+    transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+}
+
+/*Zoom Button*/
+.panel .panel-body a.zoom span.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0;
+    transition: opacity .25s ease-out;
+    -moz-transition: opacity .25s ease-out;
+    -webkit-transition: opacity .25s ease-out;
+    -o-transition: opacity .25s ease-out;
+}
+
+/*Zoom Button and Tint Overlay*/
+.panel .panel-body a.zoom:hover span.overlay {
+    display: block;
+    visibility: visible;
+    opacity: 0.55;
+    -moz-opacity: 0.55;
+    -webkit-opacity: 0.55;
+    filter: alpha(opacity=65);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+}
+
+/*Zoom Button*/
+.panel .panel-body a.zoom:hover span.overlay i {
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    width: 100%;
+    font-size: 2.25em;
+    color: #fff !important;
+    text-align: center;
+    opacity: 1;
+    -moz-opacity: 1;
+    -webkit-opacity: 1;
+    filter: alpha(opacity=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+}
+#lightbox .modal-content {
+    display: inline-block;
+    text-align: center;
+}
+    .dropdown {
+    position: relative;
+    margin-top: 15px;
+    width: 300px;
+    height: 50px;
+    border: 1px solid #f5f5f5;
+    padding: 14px;
+    border-radius: 4px;
+}
+.mn {
+    background-color: #1a3d44;
+    padding: 0px 68px;
+	width:100%!important;
+}
+.dropdown::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1000;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #333;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.dropdown.active::before {
+    top: 22px;
+    transform: rotate(-225deg);
+}
+
+.dropdown input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: #fff;
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.dropdown .options {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+
+.dropdown.active .options {
+    display: block;
+}
+
+.dropdown .options div {
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.dropdown .options div:hover {
+    background: #62baea;
+    color: #fff;
+}
+
+.dropdown .options div ion-icon {
+    position: relative;
+    top: 4px;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+.wrp-loop img {
+    width: 100%;
+}
+.wrp-loop {
+    text-align: center;
+    margin-bottom: -71px;
+}
+.wrp-loop h3 {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    top: 156px;
+    padding: 10px;
+    left: 19%;
+    font-size: 18px;
+    width: 63%;
+    background: #ffffffe8;
+    font-weight: 500;
+}
+.wrp-loop a {
+    color: black;
+    text-transform: none;
+}
+.pd {
+    padding: 0px;
+}
+.prs {
+    margin-bottom: 42px;
+}
+.pading {
+    padding: 1% 4% 0% 4%;
+    z-index: -1;
+}
+.vlogs>h3>a {
+    color: #54595f;
+    font-weight: 600;
+}
+.vlogs h3 {
+    font-size: 18px;
+}
+.vlogs>ul>li {
+    list-style: none;
+    display: inline-block;
+}
+a.read {
+    color: #464646;
+    font-weight: 600;
+    font-size: 12px;
+}
+.vlogs ul {
+    margin-left: -40px;
+}
+.vlogs p {
+    color: #777;
+    font-size: 14px;
+}
+.sidebar ul li {
+    list-style: none;
+    padding: 4px;
+}
+.vlogs>a>img {
+    width: 100%;
+    height: 350px;
+}
+.sidebar h3 {
+    text-align: left;
+    margin-left: 12%;
+    color: #000000;
+    font-weight: 600;
+    font-size: 23px;
+}
+.sidebar ul li a {
+    color: #54595f;
+}
+.vlogs2 h3 {
+    color: #7c8464;
+    font-family: sans-serif;
+    font-size: 29px;
+    font-weight: 400;
+}
+.vlogs2 p {
+    /* letter-spacing: 1px; */
+    text-align: justify;
+    color: #777777;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 29px;
+}
+.vlogs1 {
+    margin-top: 17px;
+}
+.vlogs1 img {
+    width: 90%;
+    border-radius: 12px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px)  {
+    .wrp-loop h3 {
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        top: 113px;
+        padding: 10px;
+        left: 9%;
+        font-size: 18px;
+        width: 82%;
+        background: #ffffffe8;
+        font-weight: 500;
+    }
+    .sidebar ul {
+        margin-left: -21px;
+    }
+    .vlogs>a>img {
+        width: 100%;
+        height: 123px;
+    }
+    .vlogs h3 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+@media only screen and (max-width: 767px)  {
+.vlogs {
+    margin-bottom: 21px;
+}
+}
+.bn{color:white;}
+.km{background-color: #68b12c;
+    padding: 13px 61px;
+    margin-top: 16px;
+    margin-bottom: 17px;
+    color: white;
+border: 1px solid #68b12c;}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 40px;
+	padding-top: 40px;
+}
+.uj {
+    justify-content: center;
+    margin-left: 43%;
+}
+
+.sd{background-color: #1a3d44;
+    color: white;
+    padding: 12px;
+margin-bottom: 0px;}
+
+@media (min-width: 1200px){
+.container {
+    width: 1300px;
+}}

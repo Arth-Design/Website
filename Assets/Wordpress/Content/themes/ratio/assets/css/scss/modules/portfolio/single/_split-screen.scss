@@ -1,0 +1,41 @@
+/* ==========================================================================
+# Portfolio Single Gallery - begin
+========================================================================== */
+
+.split-screen{
+	.edgtf-portfolio-single-media{
+		img{
+			vertical-align:middle;
+		}
+	}
+
+	.edgtf-portfolio-info-holder{
+		@include edgtfBoxSizing(border-box);
+		padding-right:50px;
+		padding-left:10px;
+		@include edgtfTransition(top .2s ease-out);
+	}
+
+	.edgtf-portfolio-content{
+		padding-bottom: 17px;
+		border-bottom: 1px solid $first-main-color;
+	}
+
+
+	+ .edgtf-portfolio-related-holder{
+		border-top: none;
+		margin-top: 0;
+
+		&.edgtf-ptf-standard article .edgtf-item-text-holder .edgtf-item-title{
+			padding: 17px 6px 0px;
+		}
+
+		&.edgtf-ptf-standard .edgtf-ptf-category-holder{
+			padding-left: 4px;
+		}
+	}
+}
+
+/* ==========================================================================
+# Portfolio Single Gallery - end
+========================================================================== */

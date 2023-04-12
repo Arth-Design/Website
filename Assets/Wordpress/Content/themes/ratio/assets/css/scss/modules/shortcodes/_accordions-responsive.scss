@@ -1,0 +1,11 @@
+@media only screen and (max-width: $phone-portrait){
+	.edgtf-accordion-holder{
+		div.edgtf-accordion-content{
+			padding: 20px;
+		}
+		
+		.edgtf-title-holder .edgtf-tab-title{
+			padding-left: 20px;
+		}
+	}
+}

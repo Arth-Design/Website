@@ -1,0 +1,119 @@
+/* ==========================================================================
+# Call to action style - begin
+========================================================================== */
+
+.edgtf-call-to-action {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	@include edgtfBackgroundGradient();
+
+	.edgtf-call-to-action-row-75-25,
+	.edgtf-call-to-action-row-50-50,
+	.edgtf-call-to-action-row-66-33 {
+		display: table;
+		box-sizing: border-box;
+
+		width: 100%;
+	}
+
+	.edgtf-call-to-action-row-75-25 .edgtf-call-to-action-column1 {
+		width: 75%;
+	}
+
+	.edgtf-call-to-action-row-75-25 .edgtf-call-to-action-column2 {
+		width: 25%;
+	}
+
+	.edgtf-call-to-action-row-50-50 .edgtf-call-to-action-column1,
+	.edgtf-call-to-action-row-50-50 .edgtf-call-to-action-column2  {
+		width: 50%;
+	}
+
+	.edgtf-call-to-action-row-66-33 .edgtf-call-to-action-column1 {
+		width: 66%;
+	}
+
+	.edgtf-call-to-action-row-66-33 .edgtf-call-to-action-column2 {
+		width: 34%;
+	}
+
+	.edgtf-call-to-action-column2 {
+		text-align: right;
+	}
+
+	.edgtf-call-to-action-together{
+
+		.edgtf-call-to-action-cell {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.edgtf-call-to-action-column2{
+			margin-left: 40px;
+		}
+	}
+
+	.edgtf-call-to-action-separate{
+
+		.edgtf-call-to-action-cell {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+
+
+	.edgtf-text-wrapper .edgtf-call-to-action-icon-holder {
+		position: absolute;
+		height: 100%;
+		top:0;
+	}
+
+	.edgtf-text-wrapper .edgtf-call-to-action-icon {
+		display:table;
+		height:100%;
+
+		.edgtf-call-to-action-icon-inner {
+			display:table-cell;
+			height:100%;
+			vertical-align:middle;
+
+			.edgtf-call-to-action-icon {
+				color: #8b8b8b;
+				font-size: 40px;
+				display: inline;
+			}
+
+		}
+	}
+
+	.edgtf-call-to-action-inset{
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		width: calc(100% - 20px);
+		height: calc(100% - 20px);
+		border: 1px solid rgba(255,255,255,0.7);
+	}
+
+	.edgtf-call-to-action-text{
+		color: #fff;
+	}
+
+	.edgtf-btn.edgtf-btn-outline{
+		color: #fff;
+		border-color: #fff;
+	}
+}
+
+.edgtf-call-to-action.with-icon {
+
+	.edgtf-text-wrapper .edgtf-call-to-action-text {
+		padding: 0 20px 0 70px;
+	}
+
+}
+
+/* ==========================================================================
+# Call to action style - end
+========================================================================== */

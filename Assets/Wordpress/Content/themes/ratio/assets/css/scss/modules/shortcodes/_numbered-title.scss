@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Numbered title shortcodes styles
+   ========================================================================== */
+.edgtf-numbered-title {
+
+	display: table;
+
+	.edgtf-nt-number {
+		display: table-cell;
+		vertical-align: bottom;
+		font-family: Roboto, sans-serif;
+		color: $first-main-color;
+		font-size: 50px;
+		line-height: 40px;
+		font-weight: 100;
+		padding-right: 11px;
+		@include edgtfTransition(color 0.3s ease-out);
+
+		span {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+	}
+
+	.edgtf-nt-title-subtitle-holder {
+		display: table-cell;
+		vertical-align: bottom;
+
+		.edgtf-nt-title {
+			padding: 0;
+			line-height: 1em;
+		}
+
+	}
+
+}
+
+
+/* ==========================================================================
+   Numbered Title shortcode end styles
+   ========================================================================== */

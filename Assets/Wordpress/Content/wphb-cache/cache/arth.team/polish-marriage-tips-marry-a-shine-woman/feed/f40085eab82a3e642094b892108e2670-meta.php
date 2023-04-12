@@ -1,0 +1,1 @@
+<?php die(); ?>{"X-Powered-By":"PHP\/7.4.33","ETag":"\"66659fe07b9739b3709f15305c3102e1\"","Content-Type":"text\/html; charset=UTF-8","Expires":"Wed, 11 Jan 1984 05:00:00 GMT","Cache-Control":"no-cache, must-revalidate, max-age=0","Link":"<https:\/\/arth.team\/wp-json\/>; rel=\"https:\/\/api.w.org\/\""}

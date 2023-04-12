@@ -1,0 +1,109 @@
+/* ==========================================================================
+   Advanced Carousel shortcode start styles
+   ========================================================================== */
+
+.edgtf-advanced-carousel {
+	.edgtf-advanced-carousel-images {
+		visibility: hidden;
+	}
+	.edgtf-advanced-carousel-item-inner {
+		margin:20px 22px;
+		-webkit-box-shadow: 0px 0px 11px 3px rgba(194,194,194,0.3);
+		-moz-box-shadow: 0px 0px 11px 3px rgba(194,194,194,0.33);
+		box-shadow: 0px 0px 11px 3px rgba(194,194,194,0.33);
+		@include edgtfTransform(translateZ(0));
+		img {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			z-index: 200;
+		}
+		a {
+			display: block;
+			height: 100%;
+			&:before {
+				content:'';
+				position: absolute;
+				top:0;
+				left:0;
+				height: 100%;
+				width:100%;
+				background-color: rgba(255,255,255,.1);
+				opacity:0;
+				@include edgtfTransition(opacity .3s);
+				z-index: 300;
+			}
+			&:hover{
+				&:before {
+					opacity:1;
+				}
+			}
+		}
+	}
+
+	.edgtf-item-title {
+		margin:0 22px;
+		text-align: center;
+	}
+
+	.slick-slider {
+		.edgtf-slick-prev,
+		.edgtf-slick-next {
+			top: calc(50% - 55px);
+			height: 54px;
+			width:54px;
+			background-color: $first-main-color;
+			@include edgtfBackgroundGradient();
+			@include edgtfTransition(.2s ease-out);
+			
+			span {
+				position: absolute;
+				top:12px;
+				left:12px;
+			}
+		}
+
+		.edgtf-slick-next {
+			right: -54px;
+		}
+
+		.edgtf-slick-prev {
+			left: -54px;
+		}
+
+		&:hover{
+			.edgtf-slick-next {
+				right: 0;
+			}
+
+			.edgtf-slick-prev{
+				left: 0;
+			}
+		}
+
+		.edgtf-slick-dots {
+			margin-top:60px;
+			li {
+				border: 1px solid #b7b7b7;
+
+				&.slick-active {
+					background: #b7b7b7;
+				}
+
+			}
+		}
+	}
+
+	&[data-navigation='no'] {
+		.slick-slider {
+			.edgtf-slick-prev,
+			.edgtf-slick-next {
+				top: 50%;
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+   Advanced Carousel shortcode end styles
+   ========================================================================== */

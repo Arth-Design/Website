@@ -1,0 +1,158 @@
+
+/* ==========================================================================
+   Start of Vertical Split Slider
+   ========================================================================== */
+
+.edgtf-vertical-split-screen-initialized .edgtf-content .edgtf-content-inner > .edgtf-container > .edgtf-container-inner,
+.edgtf-vertical-split-screen-initialized .edgtf-content .edgtf-content-inner > .edgtf-full-width > .edgtf-full-width-inner {
+	padding: 0;
+}
+
+
+.edgtf-vertical-split-slider{
+	opacity: 0;
+	position: relative;
+	margin: 0px -2px;
+	overflow: hidden;
+
+	.edgtf-vss-ms-left {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 50%;
+
+		.edgtf-vss-ms-section{
+			background-position: 100% center !important;
+		}
+
+	}
+
+	.edgtf-vss-ms-right {
+		height: 100%;
+		position: absolute;
+		right: 0px;
+		top: 10000px;
+		width: 50%;
+
+		.edgtf-vss-ms-section{
+			background-position: 0 center !important;
+		}
+	}
+
+
+}
+
+.edgtf-vss-ms-section {
+	.ms-table{
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	.ms-tableCell {
+		display: table-cell;
+		vertical-align: middle;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+	}
+
+	.ms-easing {
+		@include edgtfTransition(all 0.7s ease-out);
+	}
+}
+
+.edgtf-vertical-split-slider-responsive {
+	display: none;
+}
+
+#multiscroll-nav {
+	position: fixed;
+	z-index: 1000;
+	margin-top: -32px;
+	top: 50%;
+	opacity: 1;
+	transition: opacity .5s ease-out;
+	-webkit-transition: opacity .5s ease-out;
+	-moz-transition: opacity .5s ease-out;
+	-o-transition: opacity .5s ease-out;
+
+	&.right {
+		right: 17px;
+	}
+
+	&.left {
+		left: 17px;
+	}
+
+	ul{
+		margin: 0;
+		padding: 0;
+
+		li{
+			display: block;
+			width: 8px;
+			height: 8px;
+			margin: 13px 7px;
+			position: relative;
+
+			a {
+				display: block;
+				position: relative;
+				z-index: 1;
+				width: 100%;
+				height: 100%;
+				cursor: pointer;
+				text-decoration: none;
+			}
+
+			span {
+				top: 0px;
+				left: 0px;
+				width: 8px;
+				height: 8px;
+				border: 1px solid #000;
+				background-color: rgba(0, 0, 0, 0);
+				border-radius: 50%;
+				position: absolute;
+				z-index: 1;
+			}
+
+			.active span{
+				background-color: #000;
+			}
+		}
+
+	}
+
+	&.edgtf-light {
+		span{
+			border-color: #fff;
+		}
+
+		li .active {
+			span{
+				background-color: #fff;
+			}
+		}
+     }
+
+	&.edgtf-dark {
+		span{
+			border-color: #000;
+		}
+		li .active {
+			span{
+				background-color: #000;
+			}
+		}
+     }
+}
+
+
+
+
+/* ==========================================================================
+   End of Vertical Split Slider
+   ========================================================================== */
